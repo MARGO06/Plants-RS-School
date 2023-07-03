@@ -1,0 +1,38 @@
+.header{
+  background-color: $color-background;
+}
+
+.container__header{
+  @include flex ($display: flex, $content:space-between);
+  padding: $padding-header 0;
+}
+
+.header__navigation{
+  width: 37%;
+}
+
+.navigation{
+  @include flex ($display: flex, $content:space-between);
+  list-style: none;
+}
+
+.navigation__link{
+  @extend %font-main;
+  text-decoration: none;
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:5.0rem);
+  color: $color-navigation;
+}
+
+.logo{
+  padding-top: $padding-logo;
+}
+
+.logo__text{
+  @extend %font-main;
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:normal);
+ }
+
+
+
+
+

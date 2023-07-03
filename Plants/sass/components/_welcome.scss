@@ -1,0 +1,36 @@
+.welcome{
+ background-color: $color-background;
+}
+
+.container__welcome{
+  @include flex ($display: flex, $content:space-between);
+  padding: $padding-welcome 0;
+}
+
+.information{
+  padding: 36px 0 32px 0;
+  width: 45%;
+}
+
+h1{
+  @extend %font-second;
+  @include font($size: 4.5rem,$style: normal,$weight: 700,$line-height:5.0rem);
+  color: $color-h1;
+  }
+  
+.welcome__text{
+  margin-top: 42px;
+  @extend %font-second;
+  color: $color-primary-text;
+  @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:3.5rem);
+}
+
+.button{
+  margin-top: 48px;
+  width: 29%;
+  height: 44px;
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height: 2.0rem);
+  @extend %font-second;
+  color: $color-second-text;
+  background-color: $color-background;
+}

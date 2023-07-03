@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-size: 10px;
+    line-height: 16px;
+}
+
+body{
+    margin: 0, auto;
+}
+
+button{
+  @extend %button-main;
+}
+h2{
+  font-size: 40px;
+font-family: Inika;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
