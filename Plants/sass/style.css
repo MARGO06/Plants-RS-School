@@ -1,14 +1,25 @@
-.logo__text, .navigation__link, h2 {
+.button__choice, .logo__text, .navigation__link, h2 {
   font-family: Inika, Georgia, serif;
 }
 
-.aboute__text, .button, .welcome__text, h1 {
+.aboute__text, .button, .welcome__text, h1, .card__table-of-contents,
+.card__text {
   font-family: Inter, Verdana, sans-serif;
 }
 
 button {
   border-radius: 10px;
   border: 2px solid #E06733;
+}
+
+.card__table-of-contents,
+.card__text {
+  text-align: center;
+}
+
+.card {
+  border-radius: 20px;
+  border: 1px solid #E3E1D5;
 }
 
 * {
@@ -80,6 +91,77 @@ h2 {
 
 .service {
   background-color: #EDF2EC;
+}
+
+.container__service {
+  padding-bottom: 121px;
+}
+
+.service__title {
+  color: #499A18;
+  width: 25%;
+  padding-top: 40px;
+}
+
+.service__button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.service__buttons {
+  margin-top: 19px;
+  margin-left: 143px;
+  width: 55%;
+}
+
+.button__choice {
+  width: 161px;
+  height: 50px;
+  margin-left: 33px;
+  color: #E06733;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button__choice:first-child {
+  margin: 0;
+}
+
+.service__img {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  height: 955px;
+}
+
+.card {
+  height: 450px;
+}
+
+.card__table-of-contents,
+.card__text {
+  display: block;
+  margin-top: 10px;
+}
+
+.card__text {
+  color: #717171;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.card__table-of-contents {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #E06733;
 }
 
 .welcome {

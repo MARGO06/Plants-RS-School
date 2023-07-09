@@ -1,3 +1,67 @@
 .service{
-    background-color: $color-background;
+  background-color: $color-background;
 }
+
+.container__service{
+  padding-bottom: 121px;
+}
+
+.service__title{
+  color: $color-second;
+  width: 25%;
+  padding-top: 40px;
+}
+.service__button{
+  @include flex ($display: flex, $content:flex-start);
+}
+.service__buttons{
+  margin-top: 19px;
+  margin-left: 143px;
+  width: 55%;
+}
+
+.button__choice{
+  width: 161px;
+  height: 50px;
+  margin-left: 33px;
+  color: $color-primary;
+  @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:normal);
+  @extend %font-main;
+}
+
+.button__choice:first-child{
+  margin: 0;
+}
+
+.service__img{
+  @include flex ($display: flex, $content:space-between);
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  height: 955px;
+}
+
+.card{
+  height: 450px;
+  @extend %card-border;
+}
+
+.card__table-of-contents,
+.card__text
+{
+  display: block;
+  margin-top: 10px;
+  @extend %text-location;
+  @extend %font-second;
+}
+
+.card__text{
+  color: $color-h1;
+  @include font ($size: 1.6rem,$style: normal,$weight: 400,$line-height:2.0rem);
+}
+
+.card__table-of-contents{
+  @include font ($size: 2.0rem,$style: normal,$weight: 700,$line-height:2.0rem);
+  color: $color-primary;
+}
+
