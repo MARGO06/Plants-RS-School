@@ -16,11 +16,8 @@ button{
   @extend %button-main;
 }
 h2{
-  font-size: 40px;
-font-family: Inika;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  @include font($size: 4.0rem,$style: normal,$weight: 400,$line-height:normal);
+  @extend %font-main;
 }
 
 

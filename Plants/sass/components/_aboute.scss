@@ -1,0 +1,29 @@
+.container__aboute{
+  @include flex ($display: flex, $content:space-between);
+  padding: 93px 0;
+}
+
+.information__aboute{
+  padding-top: 68px;
+  width: 50%;
+}
+
+.aboute__text{
+  margin-top: 40px;
+  width:100%;
+  @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:3.0rem);
+  color: $color-primary-text;
+  @extend %font-second;
+}
+
+.img__aboute{
+  margin-left: 153px;
+}
+
+.aboute__title{
+  color: $color-second;
+}
+
+.aboute__title-color{
+  color: $color-primary;
+}
