@@ -1,0 +1,50 @@
+.container__prices{
+  padding: 40px 0 150px 0;
+  @include flex ($display: flex, $content:space-between)
+}
+
+.prices__title{
+  @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:normal);
+  color: $color-second-text;
+  @extend %font-second;
+}
+
+.prices__accordion{
+  margin-top: 60px;
+  height: 282px;
+  @extend %card-border;
+}
+
+.accordion__text{
+  @include font ($size: 2.0rem,$style: normal,$weight: 700,$line-height:2.0rem);
+  color: $color-second-text;
+  @extend %font-second;
+  margin-top:16px;
+}
+.prices__inside{
+  @include flex ($display: flex, $content:space-between);
+  padding: 0 40px;
+}
+.accordion__circle{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-circle;
+  margin-top: 17px;
+}
+
+.accordion__arrow{
+  display: block;
+  margin: 6px auto;
+}
+
+.information__price{
+  padding: 0;
+}
+.prices__information{
+  line-height: 5.0rem;
+  @extend %font-main;
+  width: 37%;
+  text-align: end;
+}
+

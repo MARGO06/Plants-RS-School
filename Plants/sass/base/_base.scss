@@ -19,5 +19,11 @@ h2{
   @include font($size: 4.0rem,$style: normal,$weight: 400,$line-height:normal);
   @extend %font-main;
 }
-
+.accordion{
+  background-color: $color-background;
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  margin: 34px 40px;
+}
 
