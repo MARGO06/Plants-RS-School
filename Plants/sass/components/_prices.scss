@@ -1,6 +1,6 @@
 .container__prices{
   padding: 40px 0 150px 0;
-  @include flex ($display: flex, $content:space-between)
+  display: flex;
 }
 
 .prices__title{
@@ -38,13 +38,34 @@
   margin: 6px auto;
 }
 
-.information__price{
-  padding: 0;
-}
 .prices__information{
-  line-height: 5.0rem;
-  @extend %font-main;
-  width: 37%;
+  @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:5.0rem);
+  @extend %font-second;
   text-align: end;
+  width: 51%;
+  margin-left: 438px;
+  color: $color-second-text;
+}
+
+.information__world{
+  color: $color-second;
+}
+
+.button__information{
+  margin-top: 38px;
+  margin-left: 728px;
+  width: 162px;
+  height: 50px;
+  color: $color-primary;
+  @include font($size: 2.0rem,$style: normal,$weight: 700,$line-height:normal);
+  @extend %font-main;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.prices__img{
+  display: block;
+  margin-top: 39px;
+  margin-left: 738px;
 }
 

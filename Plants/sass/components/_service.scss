@@ -15,9 +15,9 @@
   @include flex ($display: flex, $content:flex-start);
 }
 .service__buttons{
-  margin-top: 19px;
-  margin-left: 143px;
-  width: 55%;
+  padding-top: 19px;
+  padding-left: 143px;
+  width: 60%;
 }
 
 .button__choice{
