@@ -1,0 +1,35 @@
+.contacts{
+  background-color: $color-background;
+}
+.container__contacts{
+  display: flex;
+  padding-top: 53px;
+}
+.contacts__title{
+  margin-top: 7px;
+  margin-left: 113px;
+  color: $color-second;
+}
+
+.contacts__city{
+  display: block;
+  @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:4.0rem);
+  letter-spacing: 0.1rem;
+  color: $color-h1;
+  padding: 5px 35px 5px 20px;
+  border: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  appearance: none;
+  background-color: $color-select;
+  background-image: url("/Plants-RS-School/Plants/images/accordion_btn.svg");
+  background-repeat: no-repeat;
+  background-position: right 35px top 50%, 0 0;
+  margin-left: 64px;
+  margin-top: 95px;
+  width: 37% ;
+  height: 50px;
+}
+
+.contacts__value{
+  margin-left: 20px;
+}

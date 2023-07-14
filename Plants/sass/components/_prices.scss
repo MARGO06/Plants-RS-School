@@ -1,5 +1,5 @@
 .container__prices{
-  padding: 40px 0 150px 0;
+  padding: 40px 0 115px 0;
   display: flex;
 }
 
@@ -42,7 +42,7 @@
   @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:5.0rem);
   @extend %font-second;
   text-align: end;
-  width: 51%;
+  width: 50%;
   margin-left: 438px;
   color: $color-second-text;
 }

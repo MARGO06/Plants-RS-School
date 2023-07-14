@@ -1,0 +1,40 @@
+.container__footer{
+  @include flex ($display: flex, $content:space-between);
+  padding: 40px 0;
+}
+
+.footer__img-block{
+  display: block;
+  width: 11%;
+}
+.footer__img{
+  display: block;
+  padding-top: 15px;
+}
+
+.footer_left-part{
+  @include flex ($display: flex, $content:space-between);
+  width: 14%;
+}
+
+.footer__year,
+.footer__github,
+.footer__center-part{
+  @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:5.0rem);
+  @extend %font-second;
+}
+
+.footer__center-part{
+  margin-left: 337px;
+  width: 19%;
+}
+
+.footer_right-part{
+  margin-left: 317px;
+  width: 16%;
+}
+
+.navigation__link{
+  display: block;
+  padding-top: 9px;
+}

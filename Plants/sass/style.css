@@ -3,7 +3,9 @@
 }
 
 .prices__information, .accordion__text, .prices__title, .card__table-of-contents,
-.card__text, .aboute__text, .button, .welcome__text, h1 {
+.card__text, .aboute__text, .button, .welcome__text, h1, .footer__year,
+.footer__github,
+.footer__center-part {
   font-family: Inter, Verdana, sans-serif;
 }
 
@@ -99,6 +101,52 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.footer__img-block {
+  display: block;
+  width: 11%;
+}
+
+.footer__img {
+  display: block;
+  padding-top: 15px;
+}
+
+.footer_left-part {
+  display: flex;
+  justify-content: space-between;
+  width: 14%;
+}
+
+.footer__year,
+.footer__github,
+.footer__center-part {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
+}
+
+.footer__center-part {
+  margin-left: 337px;
+  width: 19%;
+}
+
+.footer_right-part {
+  margin-left: 317px;
+  width: 16%;
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 9px;
 }
 
 .welcome {
@@ -255,7 +303,7 @@ h1 {
 }
 
 .container__prices {
-  padding: 40px 0 150px 0;
+  padding: 40px 0 115px 0;
   display: flex;
 }
 
@@ -306,7 +354,7 @@ h1 {
   font-weight: 700;
   line-height: 5rem;
   text-align: end;
-  width: 51%;
+  width: 50%;
   margin-left: 438px;
   color: #000000;
 }
@@ -333,4 +381,47 @@ h1 {
   display: block;
   margin-top: 39px;
   margin-left: 738px;
+}
+
+.contacts {
+  background-color: #EDF2EC;
+}
+
+.container__contacts {
+  display: flex;
+  padding-top: 53px;
+}
+
+.contacts__title {
+  margin-top: 7px;
+  margin-left: 113px;
+  color: #499A18;
+}
+
+.contacts__city {
+  display: block;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0.1rem;
+  color: #717171;
+  padding: 5px 35px 5px 20px;
+  border: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #D6E7D2;
+  background-image: url("/Plants-RS-School/Plants/images/accordion_btn.svg");
+  background-repeat: no-repeat;
+  background-position: right 35px top 50%, 0 0;
+  margin-left: 64px;
+  margin-top: 95px;
+  width: 37%;
+  height: 50px;
+}
+
+.contacts__value {
+  margin-left: 20px;
 }/*# sourceMappingURL=style.css.map */
