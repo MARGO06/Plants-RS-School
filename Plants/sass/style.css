@@ -1,9 +1,9 @@
-.button__information, .button__choice, .logo__text, .navigation__link, h2 {
+.button_contact, .button_choice, .logo__text, .navigation__link, h2 {
   font-family: Inika, Georgia, serif;
 }
 
 .prices__information, .accordion__text, .prices__title, .card__table-of-contents,
-.card__text, .aboute__text, .button, .welcome__text, h1, .footer__year,
+.card__text, .aboute__text, .button_information, .welcome__text, h1, .footer__year,
 .footer__github,
 .footer__center-part {
   font-family: Inter, Verdana, sans-serif;
@@ -12,6 +12,7 @@
 button {
   border-radius: 10px;
   border: 1px solid #E06733;
+  background-color: #EDF2EC;
 }
 
 .card__table-of-contents,
@@ -105,7 +106,7 @@ h2 {
 
 .container__footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 40px 0;
 }
 
@@ -182,7 +183,7 @@ h1 {
   width: 95%;
 }
 
-.button {
+.button_information {
   margin-top: 48px;
   width: 29%;
   height: 44px;
@@ -191,7 +192,6 @@ h1 {
   font-weight: 400;
   line-height: 2rem;
   color: #000000;
-  background-color: #EDF2EC;
 }
 
 .container__aboute {
@@ -232,27 +232,28 @@ h1 {
 }
 
 .container__service {
+  padding-top: 40px;
   padding-bottom: 121px;
 }
 
 .service__title {
   color: #499A18;
   width: 25%;
-  padding-top: 40px;
 }
 
 .service__button {
   display: flex;
   justify-content: flex-start;
+  width: 100%;
 }
 
 .service__buttons {
-  padding-top: 19px;
-  padding-left: 143px;
+  margin-top: 29px;
+  margin-left: 143px;
   width: 60%;
 }
 
-.button__choice {
+.button_choice {
   width: 161px;
   height: 50px;
   margin-left: 33px;
@@ -263,8 +264,8 @@ h1 {
   line-height: normal;
 }
 
-.button__choice:first-child {
-  margin: 0;
+.button_choice:first-child {
+  margin-left: 0;
 }
 
 .service__img {
@@ -363,7 +364,7 @@ h1 {
   color: #499A18;
 }
 
-.button__information {
+.button_contact {
   margin-top: 38px;
   margin-left: 728px;
   width: 162px;
@@ -389,6 +390,7 @@ h1 {
 
 .container__contacts {
   display: flex;
+  justify-content: flex-start;
   padding-top: 53px;
 }
 
@@ -398,7 +400,13 @@ h1 {
   color: #499A18;
 }
 
-.contacts__city {
+.contacts__form {
+  margin-left: 64px;
+  margin-top: 95px;
+  width: 37%;
+}
+
+.contacts__choice {
   display: block;
   font-size: 2rem;
   font-style: normal;
@@ -416,9 +424,7 @@ h1 {
   background-image: url("/Plants-RS-School/Plants/images/accordion_btn.svg");
   background-repeat: no-repeat;
   background-position: right 35px top 50%, 0 0;
-  margin-left: 64px;
-  margin-top: 95px;
-  width: 37%;
+  width: 100%;
   height: 50px;
 }
 

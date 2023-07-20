@@ -3,24 +3,25 @@
 }
 
 .container__service{
+  padding-top: 40px;
   padding-bottom: 121px;
 }
 
 .service__title{
   color: $color-second;
   width: 25%;
-  padding-top: 40px;
 }
 .service__button{
   @include flex ($display: flex, $content:flex-start);
+  width: 100%;
 }
 .service__buttons{
-  padding-top: 19px;
-  padding-left: 143px;
+  margin-top: 29px;
+  margin-left: 143px;
   width: 60%;
 }
 
-.button__choice{
+.button_choice{
   width: 161px;
   height: 50px;
   margin-left: 33px;
@@ -29,8 +30,8 @@
   @extend %font-main;
 }
 
-.button__choice:first-child{
-  margin: 0;
+.button_choice:first-child{
+  margin-left: 0;
 }
 
 .service__img{

@@ -20,11 +20,21 @@
         </div>
         <nav class="header__navigation">
           <ul class="navigation">
-            <li><a class="navigation__link navigation_change" href="#">Home</a></li>
-            <li><a class="navigation__link navigation_change" href="#">About us</a></li>
-            <li><a class="navigation__link navigation_change" href="#">Service</a></li>
-            <li><a class="navigation__link navigation_change" href="#">Price</a></li>
-            <li><a class="navigation__link navigation_change" href="#">Contacts</a></li>
+            <li class="navigation__item navigation__item_active">
+              <a class="navigation__link" href="#">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">About us</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Service</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Price</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Contacts</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -59,9 +69,9 @@
           <div class = "service__button">
             <h2 class="service__title">Service and our projects</h2>
             <div class="service__buttons">
-              <button class="button button__choice">Gardens</button>
-              <button class="button button__choice">Lawn</button>
-              <button class="button button__choice">Planting</button>
+              <button class="button button_choice">Gardens</button>
+              <button class="button button_choice">Lawn</button>
+              <button class="button button_choice">Planting</button>
             </div>
           </div>
           <div class="service__img">
@@ -125,7 +135,7 @@
           </div>
           <div class="information__price">
               <h2 class="prices__information">Our best <span class="information__world">gardeners</span> are ready to help you</h2>
-              <button class="button button__information">Contacts</button>
+              <button class="button button_contact">Contacts</button>
               <img src="./images/leaf.png" alt="leafs" class="prices__img">
           </div>
         </div>
@@ -134,9 +144,11 @@
         <div class="container container__contacts">
           <img src="./images/contact_woman1.png" alt="woman" class="contacts__img">
           <h2 class="contacts__title">Contact us</h2>
-          <select name="city" class="contacts__city">
-            <option value="city">City</option>
-          </select>
+          <form action="#" class="contacts__form">
+            <select name="city" class="contacts__choice contacts__choice_city">
+              <option value="city">City</option>
+            </select>
+        </form>
         </div>
       </section>
     </main>
@@ -152,10 +164,18 @@
         <p class="footer__center-part">Rolling Scopes School</p>
         <nav class="footer_right-part">
             <ul class="navigation">
-              <li><a class="navigation__link "><img src="./images/inst1.svg" alt="instagram-sign" class="navigation__svg"></a></li>
-              <li><a class="navigation__link "><img src="./images/fb1.svg" alt="facebook-sign" class="navigation__svg"></a></li>
-              <li><a class="navigation__link "><img src="./images/tw1.svg" alt="twitter-sign" class="navigation__svg"></a></li>
-              <li><a class="navigation__link "><img src="./images/pinterest1.svg" alt="pinterest-sign" class="navigation__svg"></a></li>
+              <li class="navigation__item">
+                <a class="navigation__link "><img src="./images/inst1.svg" alt="instagram-sign" class="navigation__svg"></a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link "><img src="./images/fb1.svg" alt="facebook-sign" class="navigation__svg"></a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link "><img src="./images/tw1.svg" alt="twitter-sign" class="navigation__svg"></a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link "><img src="./images/pinterest1.svg" alt="pinterest-sign" class="navigation__svg"></a>
+              </li>
             </ul>
           </nav>
       </div>

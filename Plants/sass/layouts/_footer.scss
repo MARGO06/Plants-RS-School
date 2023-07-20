@@ -1,5 +1,5 @@
 .container__footer{
-  @include flex ($display: flex, $content:space-between);
+  @include flex ($display: flex, $content:flex-start);
   padding: 40px 0;
 }
 
