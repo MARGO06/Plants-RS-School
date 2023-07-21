@@ -7,4 +7,7 @@
   @include media-adaptive-1001{
     max-width: 800px;
   }
+  @include media-adaptive-801 {
+    max-width: 767px;
+  }
 }

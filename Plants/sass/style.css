@@ -73,6 +73,11 @@ h2 {
     max-width: 800px;
   }
 }
+@media (max-width: 801px) {
+  .container {
+    max-width: 767px;
+  }
+}
 
 .header {
   background-color: #EDF2EC;

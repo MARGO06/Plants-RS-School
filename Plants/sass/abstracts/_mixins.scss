@@ -13,6 +13,11 @@
 @mixin media-adaptive {
   @media (max-width:$content-width-1221){@content;}
 }
+
 @mixin media-adaptive-1001 {
   @media (max-width:$content-width-1001){@content;}
+}
+
+@mixin media-adaptive-801 {
+  @media (max-width:$content-width-801){@content;}
 }
