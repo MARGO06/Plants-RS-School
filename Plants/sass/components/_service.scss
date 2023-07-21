@@ -5,6 +5,10 @@
 .container__service{
   padding-top: 40px;
   padding-bottom: 121px;
+  @include media-tablet{
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
 }
 
 .service__title{
@@ -28,6 +32,10 @@
   @include media-adaptive-1001{
     margin-left: 0;
     width: 75%;
+  }
+  @include media-tablet{
+    margin-top: 44px;
+    width: 100%;
   }
 }
 
@@ -54,6 +62,10 @@
     height: 1400px;
     margin-top: 50px;
   }
+  @include media-tablet{
+    margin-top: 2px;
+    height: 1464px;
+  }
 }
 
 .card{
@@ -62,13 +74,16 @@
   @include media-adaptive-1001{
     margin-top: 30px;
   }
+  @include media-tablet{
+    margin-top: 38px;
+  }
 }
 
 .card__table-of-contents,
 .card__text
 {
   display: block;
-  margin-top: 10px;
+  margin-top: 8px;
   @extend %text-location;
   @extend %font-second;
 }
@@ -76,6 +91,11 @@
 .card__text{
   color: $color-h1;
   @include font ($size: 1.6rem,$style: normal,$weight: 400,$line-height:2.0rem);
+  @include media-tablet{
+    text-align: center;
+    width: 72%;
+    margin: 8px auto;
+  }
 }
 
 .card__table-of-contents{

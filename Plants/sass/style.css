@@ -50,6 +50,14 @@ h2 {
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 
 .accordion {
   background-color: #EDF2EC;
@@ -334,6 +342,11 @@ h1 {
     flex-direction: column;
   }
 }
+@media (max-width: 768px) {
+  .container__aboute {
+    padding: 40px 0 95px 0;
+  }
+}
 
 .information__aboute {
   padding-top: 68px;
@@ -342,6 +355,11 @@ h1 {
 @media (max-width: 1001px) {
   .information__aboute {
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .information__aboute {
+    padding-top: 0;
   }
 }
 
@@ -354,17 +372,44 @@ h1 {
   line-height: 3rem;
   color: #636060;
 }
+@media (max-width: 768px) {
+  .aboute__text {
+    margin-top: 50px;
+  }
+}
 
 .img__aboute {
   margin-left: 153px;
+}
+@media (max-width: 768px) {
+  .img__aboute {
+    margin-left: 0;
+    margin: auto;
+    margin-top: 68px;
+    width: 37.2%;
+  }
 }
 
 .aboute__title {
   color: #499A18;
 }
+@media (max-width: 768px) {
+  .aboute__title {
+    width: 63%;
+    text-align: center;
+    margin: auto;
+  }
+}
 
 .aboute__title-color {
   color: #E06733;
+}
+
+@media (max-width: 768px) {
+  .img__about-plants {
+    display: block;
+    height: 258px;
+  }
 }
 
 .service {
@@ -374,6 +419,12 @@ h1 {
 .container__service {
   padding-top: 40px;
   padding-bottom: 121px;
+}
+@media (max-width: 768px) {
+  .container__service {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
 }
 
 .service__title {
@@ -408,6 +459,12 @@ h1 {
     width: 75%;
   }
 }
+@media (max-width: 768px) {
+  .service__buttons {
+    margin-top: 44px;
+    width: 100%;
+  }
+}
 
 .button_choice {
   width: 161px;
@@ -438,6 +495,12 @@ h1 {
     margin-top: 50px;
   }
 }
+@media (max-width: 768px) {
+  .service__img {
+    margin-top: 2px;
+    height: 1464px;
+  }
+}
 
 .card {
   height: 450px;
@@ -447,11 +510,16 @@ h1 {
     margin-top: 30px;
   }
 }
+@media (max-width: 768px) {
+  .card {
+    margin-top: 38px;
+  }
+}
 
 .card__table-of-contents,
 .card__text {
   display: block;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .card__text {
@@ -460,6 +528,13 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 2rem;
+}
+@media (max-width: 768px) {
+  .card__text {
+    text-align: center;
+    width: 72%;
+    margin: 8px auto;
+  }
 }
 
 .card__table-of-contents {

@@ -4,6 +4,9 @@
   @include media-adaptive-1001{
     flex-direction: column;
   }
+  @include media-tablet{
+    padding: 40px 0 95px 0;
+  }
 }
 
 .information__aboute{
@@ -11,6 +14,9 @@
   width: 50%;
   @include media-adaptive-1001{
     width: 100%;
+  }
+  @include media-tablet{
+    padding-top: 0;
   }
 }
 
@@ -20,16 +26,37 @@
   @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:3.0rem);
   color: $color-primary-text;
   @extend %font-second;
+  @include media-tablet{
+    margin-top: 50px;
+  }
 }
 
 .img__aboute{
   margin-left: 153px;
+  @include media-tablet{
+    margin-left: 0;
+    margin: auto;
+    margin-top: 68px;
+    width: 37.2%;
+  }
 }
 
 .aboute__title{
   color: $color-second;
+  @include media-tablet{
+   width:63%;
+   text-align: center;
+   margin: auto;
+  }
 }
 
 .aboute__title-color{
   color: $color-primary;
+}
+
+.img__about-plants{
+  @include media-tablet{
+    display: block;
+    height: 258px;
+  }
 }
