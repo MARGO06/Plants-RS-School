@@ -10,15 +10,25 @@
 .service__title{
   color: $color-second;
   width: 25%;
+  @include media-adaptive-1001{
+    width: 45%;
+  }
 }
 .service__button{
   @include flex ($display: flex, $content:flex-start);
   width: 100%;
+  @include media-adaptive-1001{
+    flex-direction: column;
+  }
 }
 .service__buttons{
   margin-top: 29px;
   margin-left: 143px;
   width: 60%;
+  @include media-adaptive-1001{
+    margin-left: 0;
+    width: 75%;
+  }
 }
 
 .button_choice{
@@ -40,11 +50,18 @@
   flex-wrap: wrap;
   margin-top: 80px;
   height: 955px;
+  @include media-adaptive-1001{
+    height: 1400px;
+    margin-top: 50px;
+  }
 }
 
 .card{
   height: 450px;
   @extend %card-border;
+  @include media-adaptive-1001{
+    margin-top: 30px;
+  }
 }
 
 .card__table-of-contents,

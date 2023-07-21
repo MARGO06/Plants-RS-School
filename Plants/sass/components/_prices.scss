@@ -42,6 +42,9 @@
   flex-direction: column;
   justify-content: end;
   width: 37%;
+  @include media-adaptive-1001{
+    width: 50%;
+  }
 }
 .prices__information{
   @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:5.0rem);

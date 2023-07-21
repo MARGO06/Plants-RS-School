@@ -1,4 +1,3 @@
-/*$content-adaptive-width:1020px;*/
 .button_contact, .button_choice, .logo__text, .navigation__link, h2 {
   font-family: Inika, Georgia, serif;
 }
@@ -69,6 +68,11 @@ h2 {
     max-width: 1000px;
   }
 }
+@media (max-width: 1001px) {
+  .container {
+    max-width: 800px;
+  }
+}
 
 .header {
   background-color: #EDF2EC;
@@ -82,6 +86,11 @@ h2 {
 
 .header__navigation {
   width: 37%;
+}
+@media (max-width: 1001px) {
+  .header__navigation {
+    width: 57%;
+  }
 }
 
 .navigation {
@@ -136,6 +145,11 @@ h2 {
     width: 18%;
   }
 }
+@media (max-width: 1001px) {
+  .footer_left-part {
+    width: 22%;
+  }
+}
 
 .footer__year,
 .footer__github,
@@ -156,6 +170,12 @@ h2 {
     margin-left: 24%;
   }
 }
+@media (max-width: 1001px) {
+  .footer__center-part {
+    width: 33%;
+    margin-left: 20%;
+  }
+}
 
 .footer_right-part {
   margin-left: 26%;
@@ -165,6 +185,12 @@ h2 {
   .footer_right-part {
     width: 20%;
     margin-left: 20%;
+  }
+}
+@media (max-width: 1001px) {
+  .footer_right-part {
+    width: 24%;
+    margin-left: 14%;
   }
 }
 
@@ -216,16 +242,44 @@ h1 {
   line-height: 2rem;
   color: #000000;
 }
+@media (max-width: 1221px) {
+  .button_information {
+    width: 35%;
+  }
+}
+@media (max-width: 1001px) {
+  .button_information {
+    width: 44%;
+  }
+}
+
+@media (max-width: 1001px) {
+  .welcome__img {
+    width: 50%;
+    height: 100%;
+    margin-top: 10px;
+  }
+}
 
 .container__aboute {
   display: flex;
   justify-content: space-between;
   padding: 93px 0;
 }
+@media (max-width: 1001px) {
+  .container__aboute {
+    flex-direction: column;
+  }
+}
 
 .information__aboute {
   padding-top: 68px;
   width: 50%;
+}
+@media (max-width: 1001px) {
+  .information__aboute {
+    width: 100%;
+  }
 }
 
 .aboute__text {
@@ -263,17 +317,33 @@ h1 {
   color: #499A18;
   width: 25%;
 }
+@media (max-width: 1001px) {
+  .service__title {
+    width: 45%;
+  }
+}
 
 .service__button {
   display: flex;
   justify-content: flex-start;
   width: 100%;
 }
+@media (max-width: 1001px) {
+  .service__button {
+    flex-direction: column;
+  }
+}
 
 .service__buttons {
   margin-top: 29px;
   margin-left: 143px;
   width: 60%;
+}
+@media (max-width: 1001px) {
+  .service__buttons {
+    margin-left: 0;
+    width: 75%;
+  }
 }
 
 .button_choice {
@@ -299,9 +369,20 @@ h1 {
   margin-top: 80px;
   height: 955px;
 }
+@media (max-width: 1001px) {
+  .service__img {
+    height: 1400px;
+    margin-top: 50px;
+  }
+}
 
 .card {
   height: 450px;
+}
+@media (max-width: 1001px) {
+  .card {
+    margin-top: 30px;
+  }
 }
 
 .card__table-of-contents,
@@ -379,6 +460,11 @@ h1 {
   justify-content: end;
   width: 37%;
 }
+@media (max-width: 1001px) {
+  .information__price {
+    width: 50%;
+  }
+}
 
 .prices__information {
   font-size: 4rem;
@@ -423,6 +509,11 @@ h1 {
   justify-content: flex-start;
   padding-top: 53px;
 }
+@media (max-width: 1001px) {
+  .container__contacts {
+    flex-direction: column;
+  }
+}
 
 .contacts__title {
   width: 16%;
@@ -436,6 +527,12 @@ h1 {
     margin-left: 5%;
   }
 }
+@media (max-width: 1001px) {
+  .contacts__title {
+    margin: auto;
+    order: 1;
+  }
+}
 
 .contacts__form {
   margin-left: 5.2%;
@@ -445,6 +542,13 @@ h1 {
 @media (max-width: 1221px) {
   .contacts__form {
     margin-left: 3%;
+  }
+}
+@media (max-width: 1001px) {
+  .contacts__form {
+    margin: auto;
+    margin-top: 20px;
+    order: 2;
   }
 }
 
@@ -472,4 +576,13 @@ h1 {
 
 .contacts__value {
   margin-left: 20px;
+}
+
+@media (max-width: 1001px) {
+  .contacts__img {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    order: 3;
+  }
 }/*# sourceMappingURL=style.css.map */

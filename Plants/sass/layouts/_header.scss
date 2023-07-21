@@ -9,6 +9,9 @@
 
 .header__navigation{
   width: 37%;
+  @include media-adaptive-1001 {
+    width: 57%;
+  }
 }
 
 .navigation{

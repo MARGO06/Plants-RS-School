@@ -4,4 +4,7 @@
   @include media-adaptive{
     max-width: 1000px;
   }
+  @include media-adaptive-1001{
+    max-width: 800px;
+  }
 }

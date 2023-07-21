@@ -4,6 +4,9 @@
 .container__contacts{
   @include flex ($display: flex, $content:flex-start);
   padding-top: 53px;
+  @include media-adaptive-1001{
+   flex-direction: column;
+  }
 }
 .contacts__title{
   width: 16%;
@@ -14,6 +17,10 @@
     width: 25%;
     margin-left: 5%;
   }
+  @include media-adaptive-1001{
+    margin: auto;
+    order:1;
+  }
 }
 .contacts__form{
   margin-left: 5.2%;
@@ -21,6 +28,11 @@
   width: 37% ;
   @include media-adaptive{
     margin-left: 3%;
+  }
+  @include media-adaptive-1001{
+    margin: auto;
+    margin-top: 20px;
+    order:2;
   }
 }
 .contacts__choice{
@@ -42,4 +54,13 @@
 
 .contacts__value{
   margin-left: 20px;
+}
+
+.contacts__img{
+  @include media-adaptive-1001{
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  order:3;
+  }
 }

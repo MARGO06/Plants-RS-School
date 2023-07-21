@@ -18,6 +18,9 @@
   @include media-adaptive{
     width: 18%;
   }
+  @include media-adaptive-1001{
+    width: 22%;
+  }
 }
 
 .footer__year,
@@ -34,6 +37,10 @@
     width: 26%;
     margin-left: 24%;
   }
+  @include media-adaptive-1001{
+    width: 33%;
+    margin-left: 20%;
+  }
 }
 
 .footer_right-part{
@@ -42,6 +49,10 @@
   @include media-adaptive{
     width: 20%;
     margin-left: 20%;
+  }
+  @include media-adaptive-1001{
+    width: 24%;
+    margin-left: 14%;
   }
 }
 
