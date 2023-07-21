@@ -1,3 +1,4 @@
+/*$content-adaptive-width:1020px;*/
 .button_contact, .button_choice, .logo__text, .navigation__link, h2 {
   font-family: Inika, Georgia, serif;
 }
@@ -63,6 +64,11 @@ h2 {
   max-width: 1220px;
   margin: 0 auto;
 }
+@media (max-width: 1221px) {
+  .container {
+    max-width: 1000px;
+  }
+}
 
 .header {
   background-color: #EDF2EC;
@@ -125,6 +131,11 @@ h2 {
   justify-content: space-between;
   width: 14%;
 }
+@media (max-width: 1221px) {
+  .footer_left-part {
+    width: 18%;
+  }
+}
 
 .footer__year,
 .footer__github,
@@ -136,13 +147,25 @@ h2 {
 }
 
 .footer__center-part {
-  margin-left: 337px;
+  margin-left: 28%;
   width: 19%;
+}
+@media (max-width: 1221px) {
+  .footer__center-part {
+    width: 26%;
+    margin-left: 24%;
+  }
 }
 
 .footer_right-part {
-  margin-left: 317px;
+  margin-left: 26%;
   width: 16%;
+}
+@media (max-width: 1221px) {
+  .footer_right-part {
+    width: 20%;
+    margin-left: 20%;
+  }
 }
 
 .navigation__link {
@@ -306,6 +329,7 @@ h1 {
 .container__prices {
   padding: 40px 0 115px 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .prices__title {
@@ -349,14 +373,20 @@ h1 {
   margin: 6px auto;
 }
 
+.information__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 37%;
+}
+
 .prices__information {
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
   line-height: 5rem;
   text-align: end;
-  width: 50%;
-  margin-left: 438px;
+  width: 100%;
   color: #000000;
 }
 
@@ -366,8 +396,8 @@ h1 {
 
 .button_contact {
   margin-top: 38px;
-  margin-left: 728px;
-  width: 162px;
+  margin-left: 64%;
+  width: 36%;
   height: 50px;
   color: #E06733;
   font-size: 2rem;
@@ -381,7 +411,7 @@ h1 {
 .prices__img {
   display: block;
   margin-top: 39px;
-  margin-left: 738px;
+  margin-left: 290px;
 }
 
 .contacts {
@@ -395,15 +425,27 @@ h1 {
 }
 
 .contacts__title {
+  width: 16%;
   margin-top: 7px;
-  margin-left: 113px;
+  margin-left: 9%;
   color: #499A18;
+}
+@media (max-width: 1221px) {
+  .contacts__title {
+    width: 25%;
+    margin-left: 5%;
+  }
 }
 
 .contacts__form {
-  margin-left: 64px;
+  margin-left: 5.2%;
   margin-top: 95px;
   width: 37%;
+}
+@media (max-width: 1221px) {
+  .contacts__form {
+    margin-left: 3%;
+  }
 }
 
 .contacts__choice {

@@ -6,14 +6,22 @@
   padding-top: 53px;
 }
 .contacts__title{
+  width: 16%;
   margin-top: 7px;
-  margin-left: 113px;
+  margin-left: 9%;
   color: $color-second;
+  @include media-adaptive{
+    width: 25%;
+    margin-left: 5%;
+  }
 }
 .contacts__form{
-  margin-left: 64px;
+  margin-left: 5.2%;
   margin-top: 95px;
   width: 37% ;
+  @include media-adaptive{
+    margin-left: 3%;
+  }
 }
 .contacts__choice{
   display: block;

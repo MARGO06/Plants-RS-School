@@ -1,4 +1,7 @@
 .container{
-  max-width: $content-width;
+  max-width: 1220px;
   margin: 0 auto;
+  @include media-adaptive{
+    max-width: 1000px;
+  }
 }

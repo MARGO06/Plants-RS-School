@@ -9,3 +9,7 @@
   display:$display;
   justify-content: $content;
 }
+
+@mixin media-adaptive {
+  @media (max-width:$content-width-1221){@content;}
+}
