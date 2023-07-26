@@ -7,6 +7,9 @@
   @include media-adaptive-1001{
    flex-direction: column;
   }
+  @include media-tablet{
+    padding-top: 40px;
+  }
 }
 .contacts__title{
   width: 16%;
@@ -21,6 +24,10 @@
     margin: auto;
     order:1;
   }
+  @include media-tablet{
+    @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:normal);
+    width: 29%;
+  }
 }
 .contacts__form{
   margin-left: 5.2%;
@@ -33,6 +40,10 @@
     margin: auto;
     margin-top: 20px;
     order:2;
+  }
+  @include media-tablet{
+    width:67.3%;
+    margin-top: 99px;
   }
 }
 .contacts__choice{
@@ -62,5 +73,9 @@
   margin: auto;
   margin-top: 20px;
   order:3;
+  }
+  @include media-tablet{
+    width:200px;
+    margin-top: 250px;
   }
 }

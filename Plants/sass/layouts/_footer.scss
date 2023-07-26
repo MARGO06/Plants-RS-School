@@ -1,15 +1,26 @@
 .container__footer{
   @include flex ($display: flex, $content:flex-start);
   padding: 40px 0;
+  @include media-tablet{
+    flex-direction: column;
+    padding: 33px 0 18px 0;
+  }
 }
 
 .footer__img-block{
   display: block;
   width: 11%;
+  @include media-tablet{
+    width: 12%;
+  }
 }
 .footer__img{
   display: block;
   padding-top: 15px;
+  @include media-tablet{
+    padding: 4px;
+    margin: auto;
+  }
 }
 
 .footer_left-part{
@@ -21,6 +32,11 @@
   @include media-adaptive-1001{
     width: 22%;
   }
+  @include media-tablet{
+    margin: auto;
+    width: 31.4%;
+    @include flex ($display: flex, $content:space-around);
+  }
 }
 
 .footer__year,
@@ -28,6 +44,9 @@
 .footer__center-part{
   @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:5.0rem);
   @extend %font-second;
+  @include media-tablet{
+    @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:normal);
+  }
 }
 
 .footer__center-part{
@@ -40,6 +59,11 @@
   @include media-adaptive-1001{
     width: 33%;
     margin-left: 20%;
+  }
+  @include media-tablet{
+    margin: auto;
+    width: 31.4%;
+    margin-top: 16px;
   }
 }
 
@@ -54,9 +78,19 @@
     width: 24%;
     margin-left: 14%;
   }
+  @include media-tablet{
+    margin: auto;
+    width: 28%;
+    margin-top: 25px;
+  }
 }
 
 .navigation__link-footer{
   display: block;
   padding-top: 9px;
+  @include media-tablet{
+    padding-top: 0;
+  }
 }
+
+
