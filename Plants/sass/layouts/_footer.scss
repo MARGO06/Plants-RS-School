@@ -5,6 +5,9 @@
     flex-direction: column;
     padding: 33px 0 18px 0;
   }
+  @include media-mobile{
+    padding: 22px 0 7px 0;
+  }
 }
 
 .footer__img-block{
@@ -39,6 +42,9 @@
   }
   @include media-adaptive-559{
     width: 40%;
+  }
+  @include media-mobile{
+    width: 64%;
   }
 }
 
@@ -77,6 +83,9 @@
   @include media-adaptive-449{
     width: 56%;
   }
+  @include media-mobile{
+    width: 64%;
+  }
 }
 
 .footer_right-part{
@@ -97,6 +106,10 @@
   }
   @include media-adaptive-559{
     width: 40%;
+  }
+  @include media-mobile{
+    width: 59%;
+    margin-top: 12px;
   }
 }
 

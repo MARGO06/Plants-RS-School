@@ -29,5 +29,18 @@ h2{
   height: 50px;
   border-radius: 20px;
   margin: 34px 40px;
+  @include media-mobile{
+    margin: 0 22px;
+    width: 180px;
+    &:first-child{
+    margin-top: 29px;
+    }
+    &:last-child{
+      margin-top: 10px;
+    }
+    &:nth-child(2){
+      margin-top: 10px;
+    }
+  }
 }
 

@@ -5,6 +5,9 @@
     flex-direction: column;
     padding: 40px 0 40px 0;
   }
+  @include media-mobile{
+    padding-top: 25px;
+  }
 }
 
 .prices__title{
@@ -18,6 +21,9 @@
   @include media-adaptive-669{
     width: 24%;
     margin: auto;
+  }
+  @include media-mobile{
+    @include font($size: 2.5rem,$style: normal,$weight: 700,$line-height:normal);
   }
 }
 
@@ -38,6 +44,12 @@
   @include media-adaptive-449{
     width: 86%;
   }
+  @include media-mobile{
+    width: 68%;
+    height: 235px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
 }
 
 .accordion__text{
@@ -45,10 +57,16 @@
   color: $color-second-text;
   @extend %font-second;
   margin-top:16px;
+  @include media-mobile{
+    @include font ($size: 1.5rem,$style: normal,$weight: 700,$line-height:2.0rem);
+  }
 }
 .prices__inside{
   @include flex ($display: flex, $content:space-between);
   padding: 0 40px;
+  @include media-mobile{
+    padding: 0 38px 0 30px;
+  }
 }
 .accordion__circle{
   width: 16px;
@@ -80,6 +98,9 @@
   @include media-adaptive-559{
     width: 75%;
   }
+  @include media-mobile{
+    width: 70%;
+  }
 }
 .prices__information{
   @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:5.0rem);
@@ -94,6 +115,10 @@
   @include media-adaptive-669{
     margin-top: 0;
     text-align: center;
+  }
+  @include media-mobile{
+    @include font($size: 2.0rem,$style: normal,$weight: 700,$line-height:3.5rem);
+    margin-top: 21px;
   }
 }
 
@@ -119,6 +144,12 @@
   @include media-adaptive-669{
     margin: 20px auto;
   }
+  @include media-mobile{
+    width: 52%;
+    height: 35px;
+    @include font($size: 1.5rem,$style: normal,$weight: 700,$line-height:normal);
+    margin-bottom: 0;
+  }
 }
 
 .prices__img{
@@ -132,6 +163,9 @@
   }
   @include media-adaptive-669{
     margin: 20px auto;
+  }
+  @include media-mobile{
+    display: none;
   }
 }
 

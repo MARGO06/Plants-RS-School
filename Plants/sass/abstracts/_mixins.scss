@@ -33,6 +33,11 @@
 @mixin media-adaptive-559 {
   @media (max-width:$screen-width-559){@content;}
 }
+
 @mixin media-adaptive-449 {
   @media (max-width:$screen-width-449){@content;}
+}
+
+@mixin media-mobile {
+  @media (max-width:$screen-mobile-width){@content;}
 }

@@ -22,4 +22,7 @@
   @include media-adaptive-449{
     max-width: 379px;
   }
+  @include media-mobile{
+    max-width: 330px;
+  }
 }

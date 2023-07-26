@@ -12,6 +12,9 @@
   @include media-adaptive-559{
     flex-direction: column-reverse;
   }
+  @include media-mobile{
+    padding: 24px 0;
+  }
 
 }
 
@@ -34,6 +37,9 @@ h1{
   @include media-tablet{
     @include font($size: 3.5rem,$style: normal,$weight: 700,$line-height:5.0rem);
   }
+  @include media-mobile{
+    @include font($size: 2.5rem,$style: normal,$weight: 700,$line-height:3.5rem)
+  }
 }
   
 .welcome__text{
@@ -46,6 +52,9 @@ h1{
     @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:2.5rem);
     margin-top: 30px;
     width: 100%;
+  }
+  @include media-mobile{
+    margin-top: 20px;
   }
 }
 
@@ -69,6 +78,13 @@ h1{
     width: 46%;
     margin-top: 30px;
   }
+
+  @include media-mobile{
+    margin-top: 25px;
+    width: 30%;
+    height: 34px;
+    @include font($size: 1.0rem,$style: normal,$weight: 400,$line-height: 2.0rem);
+  }
 }
 
 .welcome__img{
@@ -90,5 +106,8 @@ h1{
   }
   @include media-adaptive-449{
     width: 65%;
+  }
+  @include media-mobile{
+    display: none;
   }
 }

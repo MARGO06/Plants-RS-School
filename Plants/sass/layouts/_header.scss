@@ -11,6 +11,10 @@
   @include media-adaptive-449{
     flex-direction: column;
   }
+  @include media-mobile{
+    flex-direction: row;
+    padding: 36px 0;
+  }
 }
 
 .header__navigation{
@@ -27,7 +31,60 @@
   @include media-adaptive-449{
     width: 85%;
   }
+  @include media-mobile{
+    display: none;
+  }
 }
+@include media-mobile{
+  .header__icon{
+    display: block;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    width: 40px;
+    height: 24px;
+    cursor: pointer;
+
+    & span,
+    & .sp1,
+    &::after,
+    &::before {
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      transition: all 0.5s ease 0s;
+      background-color: #717171;
+    }
+
+    &::after,
+    &::before{
+      content: '';
+    }
+
+    &::before{
+      top: 0;
+    }
+    
+    &::after{
+      bottom: 0;
+    }
+
+    & span{
+      top: 35%;
+      transform: scale(1) translate(0px,-35%);
+    }
+
+    & .sp1{
+      top: 68%;
+      transform: scale(1) translate(0px,-68%);
+    }
+
+  }
+
+}
+
+
+
 
 .navigation{
   @include flex ($display: flex, $content:space-between);
@@ -43,6 +100,9 @@
 
 .logo{
   padding-top: $padding-logo;
+  @include media-mobile{
+    padding: 0;
+  }
 }
 
 .logo__text{
