@@ -25,4 +25,7 @@
   @include media-mobile{
     max-width: 330px;
   }
+  @include media-adaptive-331{
+    max-width: 320px;
+  }
 }

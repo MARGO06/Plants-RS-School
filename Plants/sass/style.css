@@ -126,6 +126,11 @@ h2 {
     max-width: 330px;
   }
 }
+@media (max-width: 331px) {
+  .container {
+    max-width: 320px;
+  }
+}
 
 .header {
   background-color: #EDF2EC;
@@ -380,6 +385,11 @@ h2 {
 @media (max-width: 380px) {
   .footer__center-part {
     width: 64%;
+  }
+}
+@media (max-width: 331px) {
+  .footer__center-part {
+    width: 66%;
   }
 }
 

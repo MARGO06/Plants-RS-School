@@ -86,6 +86,9 @@
   @include media-mobile{
     width: 64%;
   }
+  @include media-adaptive-331{
+    width: 66%;
+  }
 }
 
 .footer_right-part{

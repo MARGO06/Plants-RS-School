@@ -41,3 +41,6 @@
 @mixin media-mobile {
   @media (max-width:$screen-mobile-width){@content;}
 }
+@mixin media-adaptive-331 {
+  @media (max-width:$screen-width-331){@content;}
+}
