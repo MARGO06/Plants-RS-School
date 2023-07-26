@@ -96,6 +96,11 @@ h2 {
     max-width: 558px;
   }
 }
+@media (max-width: 559px) {
+  .container {
+    max-width: 448px;
+  }
+}
 
 .header {
   background-color: #EDF2EC;
@@ -123,6 +128,11 @@ h2 {
 @media (max-width: 768px) {
   .header__navigation {
     width: 67.2%;
+  }
+}
+@media (max-width: 559px) {
+  .header__navigation {
+    width: 75%;
   }
 }
 
@@ -208,6 +218,11 @@ h2 {
     justify-content: space-around;
   }
 }
+@media (max-width: 559px) {
+  .footer_left-part {
+    width: 40%;
+  }
+}
 
 .footer__year,
 .footer__github,
@@ -256,6 +271,11 @@ h2 {
     width: 40%;
   }
 }
+@media (max-width: 559px) {
+  .footer__center-part {
+    width: 48%;
+  }
+}
 
 .footer_right-part {
   margin-left: 26%;
@@ -278,6 +298,11 @@ h2 {
     margin: auto;
     width: 28%;
     margin-top: 25px;
+  }
+}
+@media (max-width: 559px) {
+  .footer_right-part {
+    width: 40%;
   }
 }
 
@@ -306,6 +331,11 @@ h2 {
     padding: 40px 0 70px 0;
   }
 }
+@media (max-width: 559px) {
+  .container__welcome {
+    flex-direction: column-reverse;
+  }
+}
 
 .information {
   padding: 36px 0 32px 0;
@@ -315,6 +345,11 @@ h2 {
   .information {
     width: 52%;
     padding: 0;
+  }
+}
+@media (max-width: 559px) {
+  .information {
+    width: 100%;
   }
 }
 
@@ -400,6 +435,11 @@ h1 {
     width: 48%;
   }
 }
+@media (max-width: 559px) {
+  .welcome__img {
+    margin-top: 10px;
+  }
+}
 
 .container__aboute {
   display: flex;
@@ -469,6 +509,11 @@ h1 {
     margin: auto;
   }
 }
+@media (max-width: 559px) {
+  .aboute__title {
+    width: 100%;
+  }
+}
 
 .aboute__title-color {
   color: #E06733;
@@ -503,6 +548,11 @@ h1 {
 @media (max-width: 1001px) {
   .service__title {
     width: 45%;
+  }
+}
+@media (max-width: 559px) {
+  .service__title {
+    width: 100%;
   }
 }
 
@@ -544,6 +594,12 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 559px) {
+  .button_choice:last-child {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 .button_choice:first-child {
@@ -675,6 +731,11 @@ h1 {
     margin: 30px auto;
   }
 }
+@media (max-width: 559px) {
+  .prices__accordion {
+    width: 75%;
+  }
+}
 
 .accordion__text {
   font-size: 2rem;
@@ -724,6 +785,11 @@ h1 {
   .information__price {
     margin: 0 auto;
     width: 46%;
+  }
+}
+@media (max-width: 559px) {
+  .information__price {
+    width: 75%;
   }
 }
 
@@ -850,6 +916,11 @@ h1 {
 @media (max-width: 669px) {
   .contacts__title {
     width: 38%;
+  }
+}
+@media (max-width: 559px) {
+  .contacts__title {
+    width: 47%;
   }
 }
 

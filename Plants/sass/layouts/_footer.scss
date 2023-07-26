@@ -37,6 +37,9 @@
     width: 31.4%;
     @include flex ($display: flex, $content:space-around);
   }
+  @include media-adaptive-559{
+    width: 40%;
+  }
 }
 
 .footer__year,
@@ -68,6 +71,9 @@
   @include media-adaptive-669{
     width: 40%;
   }
+  @include media-adaptive-559{
+    width: 48%;
+  }
 }
 
 .footer_right-part{
@@ -85,6 +91,9 @@
     margin: auto;
     width: 28%;
     margin-top: 25px;
+  }
+  @include media-adaptive-559{
+    width: 40%;
   }
 }
 

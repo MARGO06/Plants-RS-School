@@ -29,3 +29,7 @@
 @mixin media-adaptive-669 {
   @media (max-width:$screen-width-669){@content;}
 }
+
+@mixin media-adaptive-559 {
+  @media (max-width:$screen-width-559){@content;}
+}

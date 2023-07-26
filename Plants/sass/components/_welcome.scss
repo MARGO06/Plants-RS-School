@@ -9,6 +9,9 @@
     flex-direction: row-reverse;
     padding: 40px 0 70px 0;
   }
+  @include media-adaptive-559{
+    flex-direction: column-reverse;
+  }
 
 }
 
@@ -18,6 +21,9 @@
   @include media-tablet{
     width: 52%;
     padding: 0;
+  }
+  @include media-adaptive-559{
+    width: 100%;
   }
 }
 
@@ -78,5 +84,8 @@ h1{
   }
   @include media-adaptive-669{
     width: 48%;
+  }
+  @include media-adaptive-559{
+    margin-top:10px;
   }
 }

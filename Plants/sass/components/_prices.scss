@@ -32,6 +32,9 @@
     width: 60%;
     margin: 30px auto;
   }
+  @include media-adaptive-559{
+    width: 75%;
+  }
 }
 
 .accordion__text{
@@ -70,6 +73,9 @@
   @include media-adaptive-669{
     margin: 0 auto;
     width: 46%;
+  }
+  @include media-adaptive-559{
+    width: 75%;
   }
 }
 .prices__information{

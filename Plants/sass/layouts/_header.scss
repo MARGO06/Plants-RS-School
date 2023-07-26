@@ -18,6 +18,9 @@
   @include media-tablet{
     width: 67.2%;
   }
+  @include media-adaptive-559{
+    width: 75%;
+  }
 }
 
 .navigation{

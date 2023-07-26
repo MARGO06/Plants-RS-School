@@ -48,6 +48,9 @@
    text-align: center;
    margin: auto;
   }
+  @include media-adaptive-559{
+    width: 100%;
+  }
 }
 
 .aboute__title-color{

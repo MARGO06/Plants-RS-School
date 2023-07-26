@@ -17,6 +17,9 @@
   @include media-adaptive-1001{
     width: 45%;
   }
+  @include media-adaptive-559{
+    width: 100%;
+  }
 }
 .service__button{
   @include flex ($display: flex, $content:flex-start);
@@ -46,6 +49,12 @@
   color: $color-primary;
   @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:normal);
   @extend %font-main;
+  @include media-adaptive-559{
+    &:last-child{
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
 }
 
 .button_choice:first-child{
