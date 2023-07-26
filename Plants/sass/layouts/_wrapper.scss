@@ -13,4 +13,7 @@
   @include media-tablet {
     max-width: 668px;
   }
+  @include media-adaptive-669 {
+    max-width: 558px;
+  }
 }

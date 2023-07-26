@@ -65,6 +65,9 @@
     width: 31.4%;
     margin-top: 16px;
   }
+  @include media-adaptive-669{
+    width: 40%;
+  }
 }
 
 .footer_right-part{

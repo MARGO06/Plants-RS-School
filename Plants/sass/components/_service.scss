@@ -66,6 +66,10 @@
     margin-top: 2px;
     height: 1464px;
   }
+  @include media-adaptive-669{
+    height: 3000px;
+    margin-top: 38px;
+  }
 }
 
 .card{
@@ -76,6 +80,9 @@
   }
   @include media-tablet{
     margin-top: 38px;
+  }
+  @include media-adaptive-669{
+    margin: auto;
   }
 }
 

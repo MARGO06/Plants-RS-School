@@ -25,3 +25,7 @@
 @mixin media-tablet {
   @media (max-width:$screen-tablet-width){@content;}
 }
+
+@mixin media-adaptive-669 {
+  @media (max-width:$screen-width-669){@content;}
+}

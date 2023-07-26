@@ -91,6 +91,11 @@ h2 {
     max-width: 668px;
   }
 }
+@media (max-width: 669px) {
+  .container {
+    max-width: 558px;
+  }
+}
 
 .header {
   background-color: #EDF2EC;
@@ -246,6 +251,11 @@ h2 {
     margin-top: 16px;
   }
 }
+@media (max-width: 669px) {
+  .footer__center-part {
+    width: 40%;
+  }
+}
 
 .footer_right-part {
   margin-left: 26%;
@@ -383,6 +393,11 @@ h1 {
     width: 42%;
     height: 252px;
     margin-top: 0;
+  }
+}
+@media (max-width: 669px) {
+  .welcome__img {
+    width: 48%;
   }
 }
 
@@ -555,6 +570,12 @@ h1 {
     height: 1464px;
   }
 }
+@media (max-width: 669px) {
+  .service__img {
+    height: 3000px;
+    margin-top: 38px;
+  }
+}
 
 .card {
   height: 450px;
@@ -567,6 +588,11 @@ h1 {
 @media (max-width: 768px) {
   .card {
     margin-top: 38px;
+  }
+}
+@media (max-width: 669px) {
+  .card {
+    margin: auto;
   }
 }
 
@@ -604,6 +630,12 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 669px) {
+  .container__prices {
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+  }
+}
 
 .prices__title {
   font-size: 4rem;
@@ -621,6 +653,12 @@ h1 {
     margin-left: 14px;
   }
 }
+@media (max-width: 669px) {
+  .prices__title {
+    width: 24%;
+    margin: auto;
+  }
+}
 
 .prices__accordion {
   margin-top: 60px;
@@ -629,6 +667,12 @@ h1 {
 @media (max-width: 768px) {
   .prices__accordion {
     margin-top: 55px;
+  }
+}
+@media (max-width: 669px) {
+  .prices__accordion {
+    width: 60%;
+    margin: 30px auto;
   }
 }
 
@@ -676,6 +720,12 @@ h1 {
     width: 44.5%;
   }
 }
+@media (max-width: 669px) {
+  .information__price {
+    margin: 0 auto;
+    width: 46%;
+  }
+}
 
 .prices__information {
   font-size: 4rem;
@@ -693,6 +743,12 @@ h1 {
     font-weight: 700;
     line-height: 3.5rem;
     margin-top: 99px;
+  }
+}
+@media (max-width: 669px) {
+  .prices__information {
+    margin-top: 0;
+    text-align: center;
   }
 }
 
@@ -720,6 +776,11 @@ h1 {
     margin-top: 28px;
   }
 }
+@media (max-width: 669px) {
+  .button_contact {
+    margin: 20px auto;
+  }
+}
 
 .prices__img {
   display: block;
@@ -731,6 +792,11 @@ h1 {
     width: 51%;
     margin-left: 49%;
     margin-top: 34px;
+  }
+}
+@media (max-width: 669px) {
+  .prices__img {
+    margin: 20px auto;
   }
 }
 
@@ -779,6 +845,11 @@ h1 {
     font-weight: 700;
     line-height: normal;
     width: 29%;
+  }
+}
+@media (max-width: 669px) {
+  .contacts__title {
+    width: 38%;
   }
 }
 
@@ -842,7 +913,7 @@ h1 {
 }
 @media (max-width: 768px) {
   .contacts__img {
-    width: 200px;
+    width: 30%;
     margin-top: 250px;
   }
 }/*# sourceMappingURL=style.css.map */

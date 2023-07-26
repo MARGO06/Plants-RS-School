@@ -1,6 +1,10 @@
 .container__prices{
   padding: 40px 0 88px 0;
   @include flex ($display: flex, $content:space-between);
+  @include media-adaptive-669{
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+  }
 }
 
 .prices__title{
@@ -11,6 +15,10 @@
     @include font($size: 3.5rem,$style: normal,$weight: 700,$line-height:normal);
     margin-left: 14px;
   }
+  @include media-adaptive-669{
+    width: 24%;
+    margin: auto;
+  }
 }
 
 .prices__accordion{
@@ -19,7 +27,10 @@
   @extend %card-border;
   @include media-tablet{
     margin-top: 55px;
-
+  }
+  @include media-adaptive-669{
+    width: 60%;
+    margin: 30px auto;
   }
 }
 
@@ -56,6 +67,10 @@
   @include media-tablet{
     width: 44.5%;
   }
+  @include media-adaptive-669{
+    margin: 0 auto;
+    width: 46%;
+  }
 }
 .prices__information{
   @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:5.0rem);
@@ -66,6 +81,10 @@
   @include media-tablet{
     @include font($size: 2.5rem,$style: normal,$weight: 700,$line-height:3.5rem);
     margin-top: 99px;
+  }
+  @include media-adaptive-669{
+    margin-top: 0;
+    text-align: center;
   }
 }
 
@@ -88,6 +107,9 @@
     margin-left: 44.5%;
     margin-top: 28px;
   }
+  @include media-adaptive-669{
+    margin: 20px auto;
+  }
 }
 
 .prices__img{
@@ -98,6 +120,9 @@
     width:51%;
     margin-left: 49%;
     margin-top: 34px;
+  }
+  @include media-adaptive-669{
+    margin: 20px auto;
   }
 }
 

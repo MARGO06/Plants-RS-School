@@ -76,4 +76,7 @@ h1{
     height: 252px;
     margin-top: 0;
   }
+  @include media-adaptive-669{
+    width: 48%;
+  }
 }

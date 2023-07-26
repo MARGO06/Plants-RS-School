@@ -28,6 +28,9 @@
     @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:normal);
     width: 29%;
   }
+  @include media-adaptive-669{
+    width: 38%;
+  }
 }
 .contacts__form{
   margin-left: 5.2%;
@@ -75,7 +78,7 @@
   order:3;
   }
   @include media-tablet{
-    width:200px;
+    width:30%;
     margin-top: 250px;
   }
 }
