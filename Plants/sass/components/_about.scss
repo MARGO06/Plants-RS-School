@@ -39,6 +39,9 @@
     margin-top: 68px;
     width: 37.2%;
   }
+  @include media-adaptive-449{
+    width: 65%;
+  }
 }
 
 .aboute__title{
@@ -61,5 +64,8 @@
   @include media-tablet{
     display: block;
     height: 258px;
+  }
+  @include media-adaptive-449{
+    margin: 20px auto;
   }
 }

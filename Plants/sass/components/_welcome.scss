@@ -88,4 +88,7 @@ h1{
   @include media-adaptive-559{
     margin-top:10px;
   }
+  @include media-adaptive-449{
+    width: 65%;
+  }
 }

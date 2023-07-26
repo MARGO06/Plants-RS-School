@@ -101,6 +101,11 @@ h2 {
     max-width: 448px;
   }
 }
+@media (max-width: 449px) {
+  .container {
+    max-width: 379px;
+  }
+}
 
 .header {
   background-color: #EDF2EC;
@@ -114,6 +119,11 @@ h2 {
 @media (max-width: 768px) {
   .container__header {
     padding: 35px 0;
+  }
+}
+@media (max-width: 449px) {
+  .container__header {
+    flex-direction: column;
   }
 }
 
@@ -133,6 +143,11 @@ h2 {
 @media (max-width: 559px) {
   .header__navigation {
     width: 75%;
+  }
+}
+@media (max-width: 449px) {
+  .header__navigation {
+    width: 85%;
   }
 }
 
@@ -274,6 +289,11 @@ h2 {
 @media (max-width: 559px) {
   .footer__center-part {
     width: 48%;
+  }
+}
+@media (max-width: 449px) {
+  .footer__center-part {
+    width: 56%;
   }
 }
 
@@ -440,6 +460,11 @@ h1 {
     margin-top: 10px;
   }
 }
+@media (max-width: 449px) {
+  .welcome__img {
+    width: 65%;
+  }
+}
 
 .container__aboute {
   display: flex;
@@ -498,6 +523,11 @@ h1 {
     width: 37.2%;
   }
 }
+@media (max-width: 449px) {
+  .img__aboute {
+    width: 65%;
+  }
+}
 
 .aboute__title {
   color: #499A18;
@@ -523,6 +553,11 @@ h1 {
   .img__about-plants {
     display: block;
     height: 258px;
+  }
+}
+@media (max-width: 449px) {
+  .img__about-plants {
+    margin: 20px auto;
   }
 }
 
@@ -736,6 +771,11 @@ h1 {
     width: 75%;
   }
 }
+@media (max-width: 449px) {
+  .prices__accordion {
+    width: 86%;
+  }
+}
 
 .accordion__text {
   font-size: 2rem;
@@ -923,6 +963,11 @@ h1 {
     width: 47%;
   }
 }
+@media (max-width: 449px) {
+  .contacts__title {
+    width: 56%;
+  }
+}
 
 .contacts__form {
   margin-left: 5.2%;
@@ -945,6 +990,11 @@ h1 {
   .contacts__form {
     width: 67.3%;
     margin-top: 99px;
+  }
+}
+@media (max-width: 449px) {
+  .contacts__form {
+    width: 95%;
   }
 }
 

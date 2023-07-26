@@ -74,6 +74,9 @@
   @include media-adaptive-559{
     width: 48%;
   }
+  @include media-adaptive-449{
+    width: 56%;
+  }
 }
 
 .footer_right-part{

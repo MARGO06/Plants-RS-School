@@ -8,6 +8,9 @@
   @include media-tablet{
     padding: 35px 0;
   }
+  @include media-adaptive-449{
+    flex-direction: column;
+  }
 }
 
 .header__navigation{
@@ -20,6 +23,9 @@
   }
   @include media-adaptive-559{
     width: 75%;
+  }
+  @include media-adaptive-449{
+    width: 85%;
   }
 }
 

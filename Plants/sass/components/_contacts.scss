@@ -34,6 +34,9 @@
   @include media-adaptive-559{
     width: 47%;
   }
+  @include media-adaptive-449 {
+    width: 56%;
+  }
 }
 .contacts__form{
   margin-left: 5.2%;
@@ -50,6 +53,9 @@
   @include media-tablet{
     width:67.3%;
     margin-top: 99px;
+  }
+  @include media-adaptive-449{
+    width: 95%;
   }
 }
 .contacts__choice{

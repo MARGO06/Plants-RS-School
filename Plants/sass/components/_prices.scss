@@ -35,6 +35,9 @@
   @include media-adaptive-559{
     width: 75%;
   }
+  @include media-adaptive-449{
+    width: 86%;
+  }
 }
 
 .accordion__text{
