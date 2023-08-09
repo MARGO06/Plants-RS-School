@@ -1,4 +1,6 @@
-import "./sass/style.css";
-import "./sass/style.scss";
+import {burgerMenu} from "./burger_menu.js";
+import {showButtons} from "./button_service.js";
+burgerMenu();
+showButtons();
 
 console.log('hello')

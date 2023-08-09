@@ -58,6 +58,13 @@
   color: $color-primary;
   @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:normal);
   @extend %font-main;
+  &.active{
+    background-color: $color-primary;
+    color: $color-navigation;
+  }
+  &:hover{
+    cursor: pointer;
+  }
   @include media-adaptive-559{
     &:last-child{
       margin-left: 0;
@@ -143,3 +150,8 @@
   color: $color-primary;
 }
 
+.card__garden.active,
+.card__planting.active,
+.card__lawn.active{
+  opacity: 0.5;
+}

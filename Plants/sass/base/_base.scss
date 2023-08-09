@@ -10,6 +10,12 @@ html{
 
 body{
     margin: 0, auto;
+    @include media-mobile{
+      &.lock{
+        height: 100%;
+        overflow-y: hidden;
+      }
+    }
 }
 
 button{
