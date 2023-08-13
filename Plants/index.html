@@ -7,6 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plants</title>
+  <link rel="icon" href="images/favicon.png">
 </head>
 <body>
   <div class="wrapper">
@@ -25,19 +26,19 @@
         <nav class="header__navigation">
           <ul class="navigation">
             <li class="navigation__item navigation__item_active">
-              <a class="navigation__link" href="#">Home</a>
+              <a class="navigation__link_active" href="#Home">Home</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">About us</a>
+              <a class="navigation__link" href="#About_us">About us</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Service</a>
+              <a class="navigation__link" href="#Service">Service</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Price</a>
+              <a class="navigation__link" href="#Price">Price</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Contacts</a>
+              <a class="navigation__link" href="#Contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -48,7 +49,7 @@
         <div class="container container__welcome">
           <img src="./images/leafs.png" alt="img-leafs" class="welcome__img">
           <div class="information">
-            <h1>We grow plants and give you oxygen</h1>
+            <h1 id="Home">We grow plants and give you oxygen</h1>
             <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
               <button class="button button_information">LEARN MORE</button>
@@ -58,7 +59,7 @@
       <section class="about">
         <div class="container container__aboute">
           <div class="information information__aboute">
-            <h2 class="aboute__title">We are <span class="aboute__title-color"> professional experienced </span> gardeners</h2>
+            <h2 class="aboute__title" id="About_us">We are <span class="aboute__title-color"> professional experienced </span> gardeners</h2>
             <p class="aboute__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
@@ -71,7 +72,7 @@
       <section class="service">
         <div class="container container__service">
           <div class = "service__button">
-            <h2 class="service__title">Service and our projects</h2>
+            <h2 class="service__title" id="Service">Service and our projects</h2>
             <div class="service__buttons">
               <button class="button button_choice">Gardens</button>
               <button class="button button_choice">Lawn</button>
@@ -139,24 +140,48 @@
       <section class="prices">
         <div class="container container__prices">
           <div class="prices__part">
-            <h2 class="prices__title">Prices</h2>
+            <h2 class="prices__title" id="Price">Prices</h2>
             <div class="prices__accordion">
-              <div class="accordion accordion_choice">
-                <div class="prices__inside">
-                  <p class="accordion__text">Basics</p>
-                  <div class="accordion__circle"><img src="./images/arrow.svg" alt="arrow" class="accordion__arrow"></div>
+              <div class="accordion">
+                <div class="accordion_choice">
+                  <div class="prices__inside">
+                    <p class="accordion__text">Basics</p>
+                    <div class="accordion__circle"><img src="./images/arrow.svg" alt="arrow" class="accordion__arrow"></div>
+                  </div>
+                </div>
+                <div class="offer offer__card">
+                  <hr>
+                  <p class="offer__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                  <p class="offer__price"><span class="offer__color">$15</span> / per hour</p>
+                  <button class="offer__button">Order</button>
                 </div>
               </div>
-              <div class="accordion accordion_choice">
-                <div class="prices__inside">
-                  <p class="accordion__text">Standard</p>
-                  <div class="accordion__circle"><img src="./images/arrow.svg" alt="arrow" class="accordion__arrow"></div>
-                 </div>
+              <div class="accordion">
+                <div class="accordion_choice">
+                  <div class="prices__inside">
+                    <p class="accordion__text">Standard</p>
+                    <div class="accordion__circle"><img src="./images/arrow.svg" alt="arrow" class="accordion__arrow"></div>
+                  </div>
                 </div>
-              <div class="accordion accordion_choice">
-                <div class="prices__inside">
-                  <p class="accordion__text">Pro care</p>
-                  <div class="accordion__circle"><img src="./images/arrow.svg" alt="arrow" class="accordion__arrow"></div>
+                <div class="offer">
+                  <hr>
+                  <p class="offer__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                  <p class="offer__price"><span class="offer__color">$15</span> / per hour</p>
+                  <button class="offer__button">Order</button>
+                </div>
+              </div>
+              <div class="accordion ">
+                <div class="accordion_choice">
+                  <div class="prices__inside">
+                    <p class="accordion__text">Pro care</p>
+                    <div class="accordion__circle"><img src="./images/arrow.svg" alt="arrow" class="accordion__arrow"></div>
+                  </div>
+                </div>
+                <div class="offer">
+                  <hr>
+                  <p class="offer__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                  <p class="offer__price"><span class="offer__color">$15</span> / per hour</p>
+                  <button class="offer__button">Order</button>
                 </div>
               </div>
             </div>
@@ -171,12 +196,31 @@
       <section class="contacts">
         <div class="container container__contacts">
           <img src="./images/contact_woman1.png" alt="woman" class="contacts__img">
-          <h2 class="contacts__title">Contact us</h2>
-          <form action="#" class="contacts__form">
+          <h2 class="contacts__title" id="Contacts">Contact us</h2>
+          <div class="contacts__form">
             <select name="city" class="contacts__choice contacts__choice_city">
-              <option value="city">City</option>
+              <option value="city" hidden >City</option>
+              <option  value="Canandaigua" class="contacts__option">Canandaigua, NY</option>
+              <option value="New York" class="contacts__option">New York City</option>
+              <option value="Yonkers" class="contacts__option">Yonkers, NY</option>
+              <option value="Sherrill" class="contacts__option">Sherrill</option>
             </select>
-        </form>
+            <div class="contacts__data">
+              <div class="contacts__city">
+                <p class="name">City:</p>
+                <p class="contacts__name">Canandaigua, NY</p>
+              </div>
+              <div class="contacts__call">
+                <p class="name">Phone:</p>
+                <p class="contacts__phone">+1 585 393 0001</p>
+              </div>
+              <div class="contacts__address">
+                <p class="name">Office address:</p>
+                <p class="contacts__street">151 Charlotte Street</p>
+              </div>
+              <a class="contacts_button" href="tel:+136745677554">Call us</a>
+          </div>
+          </div>
         </div>
       </section>
     </main>

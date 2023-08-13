@@ -135,7 +135,20 @@
     margin-left:30px;
     @include font($size: 2.4rem,$style: normal,$weight: 400,$line-height:5.0rem);
   }
+  &:hover{
+    color: $color-primary;
+    transition-duration: 2s ;
+  }
 }
+
+.navigation__link_active{
+  color: $color-primary;
+  @extend %font-main;
+  text-decoration: none;
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:5.0rem);
+}
+
+
 
 .logo{
   padding-top: $padding-logo;
@@ -148,6 +161,7 @@
   @extend %font-main;
   @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:normal);
  }
+
 
 
 

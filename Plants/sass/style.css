@@ -1,8 +1,8 @@
-.button_contact, .button_choice, .logo__text, .navigation__link, h2 {
+.contacts_button, .button_contact, .button_choice, .logo__text, .navigation__link_active, .navigation__link, h2 {
   font-family: Inika, Georgia, serif;
 }
 
-.prices__information, .accordion__text, .prices__title, .card__table-of-contents,
+.contacts__street, .contacts__phone, .contacts__name, .name, .offer__price, .offer__text, .prices__information, .accordion__text, .prices__title, .card__table-of-contents,
 .card__text, .aboute__text, .button_information, .welcome__text, h1, .footer__year,
 .footer__github,
 .footer__center-part {
@@ -34,6 +34,7 @@ button {
 html {
   font-size: 10px;
   line-height: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -289,6 +290,19 @@ h2 {
     font-weight: 400;
     line-height: 5rem;
   }
+}
+.navigation__link:hover {
+  color: #E06733;
+  transition-duration: 2s;
+}
+
+.navigation__link_active {
+  color: #E06733;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
 }
 
 .logo {
@@ -1046,6 +1060,9 @@ h1 {
   margin-top: 60px;
   height: 282px;
 }
+.prices__accordion.active {
+  height: 420px;
+}
 @media (max-width: 768px) {
   .prices__accordion {
     margin-top: 55px;
@@ -1074,6 +1091,14 @@ h1 {
     margin-top: 40px;
     margin-bottom: 0;
   }
+}
+
+.accordion_choice {
+  height: 50px;
+}
+.accordion_choice.active {
+  background-color: #D6E7D2;
+  border-radius: 20px 20px 0 0;
 }
 
 .accordion__text {
@@ -1248,6 +1273,65 @@ h1 {
   }
 }
 
+.accordion_choice + .offer {
+  display: none;
+}
+
+.accordion_choice.active + .offer {
+  display: block;
+}
+
+.offer {
+  border-radius: 0 0 20px 20px;
+  background-color: #D6E7D2;
+  width: 250px;
+  height: 154px;
+  margin: 0 auto;
+}
+.offer.active {
+  display: block;
+}
+
+hr {
+  margin-left: 40px;
+  width: 65%;
+}
+
+.offer__text {
+  margin-top: 6px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1;
+  color: #717171;
+  width: 68%;
+  margin-left: 40px;
+}
+
+.offer__price {
+  margin-left: 40px;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.offer__color {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2;
+  color: #E06733;
+}
+
+.offer__button {
+  border: none;
+  width: 34%;
+  height: 26px;
+  margin-left: 40px;
+  margin-top: 4px;
+}
+
 .contacts {
   background-color: #EDF2EC;
 }
@@ -1361,7 +1445,7 @@ h1 {
   }
 }
 
-.contacts__choice {
+.contacts__choice_city {
   display: block;
   font-size: 2rem;
   font-style: normal;
@@ -1383,7 +1467,7 @@ h1 {
   height: 50px;
 }
 @media (max-width: 380px) {
-  .contacts__choice {
+  .contacts__choice_city {
     background-position: right 25px top 50%, 0 0;
   }
 }
@@ -1410,4 +1494,102 @@ h1 {
   .contacts__img {
     margin-top: 132px;
   }
+}
+
+.contacts__choice_city + .contacts__data {
+  display: none;
+}
+
+.contacts__choice_city.active + .contacts__data {
+  display: block;
+}
+
+.contacts__option {
+  padding-top: 100px;
+  width: 100%;
+}
+
+.contacts__data {
+  width: 100%;
+  height: 217px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  margin-top: 47px;
+}
+
+.contacts__city {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.name {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0.8px;
+}
+
+.contacts__name {
+  margin-left: 93px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0.8px;
+  color: #717171;
+}
+
+.contacts__call {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 8px;
+  margin-left: 35px;
+}
+
+.contacts__phone {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0.8px;
+  color: #717171;
+  margin-left: 70px;
+}
+
+.contacts__address {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 8px;
+  margin-left: 35px;
+}
+
+.contacts__street {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0.8px;
+  color: #717171;
+  margin-left: 12px;
+}
+
+.contacts_button {
+  display: block;
+  width: 122px;
+  height: 29px;
+  margin-top: 15px;
+  margin-left: 162px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #717171;
+  padding-top: 7px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

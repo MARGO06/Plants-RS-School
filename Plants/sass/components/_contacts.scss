@@ -70,7 +70,7 @@
     width: 91%;
   }
 }
-.contacts__choice{
+.contacts__choice_city{
   display: block;
   @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:4.0rem);
   letter-spacing: 0.1rem;
@@ -108,4 +108,86 @@
   @include media-mobile{
     margin-top: 132px;
   }
+}
+
+.contacts__choice_city + .contacts__data{
+  display: none;
+}
+
+.contacts__choice_city.active + .contacts__data{
+  display: block;
+}
+.contacts__option{
+  padding-top: 100px;
+  width: 100%;
+}
+.contacts__data{
+  width: 100%;
+  height: 217px;
+  border: 1px solid $color-second-text;
+  border-radius: 20px;
+  margin-top: 47px;
+}
+
+.contacts__city{
+  @include flex ($display: flex, $content:flex-start);
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.name{
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:4.0rem);
+  letter-spacing: 0.8px;
+  @extend %font-second;
+}
+
+.contacts__name{
+  margin-left: 93px;
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:4.0rem);
+  @extend %font-second;
+  letter-spacing: 0.8px;
+  color: $color-h1;
+}
+
+.contacts__call{
+  @include flex ($display: flex, $content:flex-start);
+  margin-top: 8px;
+  margin-left: 35px;
+}
+
+.contacts__phone{
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:4.0rem);
+  @extend %font-second;
+  letter-spacing: 0.8px;
+  color: $color-h1;
+  margin-left: 70px;
+}
+.contacts__address{
+  @include flex ($display: flex, $content:flex-start);
+  margin-top: 8px;
+  margin-left: 35px;
+}
+
+.contacts__street{
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:4.0rem);
+  @extend %font-second;
+  letter-spacing: 0.8px;
+  color: $color-h1;
+  margin-left: 12px;
+}
+
+.contacts_button{
+  display: block;
+  width: 122px;
+  height: 29px;
+  margin-top: 15px;
+  margin-left: 162px;
+  text-decoration: none;
+  @include font($size: 1.0rem,$style: normal,$weight: 700,$line-height:normal);
+  @extend %font-main;
+  color: $color-h1;
+  padding-top: 7px;
+  border: 1px solid $color-primary;
+  border-radius: 5px;
+  text-align: center;
 }
