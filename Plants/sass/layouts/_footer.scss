@@ -115,8 +115,11 @@
     margin-top: 12px;
   }
 }
-
-.navigation__link-footer{
+.navigate{
+  @include flex ($display: flex, $content:space-between);
+  list-style: none;
+}
+.navigate__link-footer{
   display: block;
   padding-top: 9px;
   @include media-tablet{

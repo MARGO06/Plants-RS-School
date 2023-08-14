@@ -289,6 +289,18 @@ h2 {
   line-height: 5rem;
   color: #010201;
 }
+.navigation__link_active {
+  color: #E06733;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
+}
+.navigation__link:hover {
+  color: #E06733;
+  transition-duration: 2s;
+}
 @media (max-width: 380px) {
   .navigation__link {
     margin-left: 30px;
@@ -297,19 +309,6 @@ h2 {
     font-weight: 400;
     line-height: 5rem;
   }
-}
-.navigation__link:hover {
-  color: #E06733;
-  transition-duration: 2s;
-}
-
-.navigation__link_active {
-  color: #E06733;
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 5rem;
 }
 
 .logo {
@@ -503,12 +502,18 @@ h2 {
   }
 }
 
-.navigation__link-footer {
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navigate__link-footer {
   display: block;
   padding-top: 9px;
 }
 @media (max-width: 768px) {
-  .navigation__link-footer {
+  .navigate__link-footer {
     padding-top: 0;
   }
 }
