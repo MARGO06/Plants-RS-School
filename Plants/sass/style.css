@@ -904,6 +904,11 @@ h1 {
   background-color: #E06733;
   color: #010201;
 }
+.button_choice.no-hover {
+  cursor: none;
+  background-color: #EDF2EC;
+  color: #E06733;
+}
 @media (max-width: 559px) {
   .button_choice:last-child {
     margin-left: 0;

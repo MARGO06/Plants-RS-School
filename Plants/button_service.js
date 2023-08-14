@@ -1,12 +1,20 @@
-//const buttons = document.querySelector(".service__buttons");
 const buttons = document.querySelectorAll(".button_choice");
 const gardens = document.querySelectorAll(".card__garden");
 const plantings = document.querySelectorAll(".card__planting");
 const lawn = document.querySelector(".card__lawn");
-const serviceCards = document.querySelectorAll('.card');
 let activeButtons = [];
 
-
+function notHover(){
+    buttons.forEach(button=>{
+        button.addEventListener('mouseover',event=>{
+            if(activeButtons.length === 2 && !event.target.classList.contains('active')){
+                event.target.classList.add("no-hover");
+            }else{
+                event.target.classList.remove("no-hover");
+            }
+          })
+        })
+}
 
 function showButtons () {
     buttons.forEach(button=>{
@@ -16,15 +24,11 @@ function showButtons () {
     if( activeButtons.length === 0 || (!event.target.classList.contains('active') &&  activeButtons.length === 1)){
         event.target.classList.add('active');
         activeButtons.push(event.target.classList.contains('active'));
-        console.log(1)
     } 
     else if ( event.target.classList.contains('active') ){
        event.target.classList.remove('active');
        activeButtons.splice(activeButtons.indexOf(event.target.classList.contains('active')));
-       console.log(2)
     }
-
-    
 
 //one card
     if(buttons[0].classList.contains('active')){
@@ -84,5 +88,4 @@ function showButtons () {
 })
 }
 
-
-export {showButtons}
+export {showButtons, notHover}

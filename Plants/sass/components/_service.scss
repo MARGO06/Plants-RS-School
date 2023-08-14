@@ -65,6 +65,11 @@
   &:hover{
     @extend %button-hover;
   }
+  &.no-hover{
+    cursor: none;
+    background-color: $color-background;
+    color: $color-primary;
+  }
   @include media-adaptive-559{
     &:last-child{
       margin-left: 0;
