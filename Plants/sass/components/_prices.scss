@@ -32,7 +32,7 @@
   height: 282px;
   @extend %card-border;
   &.active{
-    height: 420px;
+    height: 370px;
   }
   @include media-tablet{
     margin-top: 55px;
@@ -89,12 +89,9 @@
   border-radius: 50%;
   background-color: $color-circle;
   margin-top: 17px;
+  background-image: url("/Plants-RS-School/Plants/images/accordion_open.png");
 }
 
-.accordion__arrow{
-  display: block;
-  margin: 6px auto;
-}
 .information__price{
   display: flex;
   flex-direction: column;
@@ -187,25 +184,37 @@
   }
 }
 .accordion_choice + .offer{
-  display: none;
+  height: 0;
+  overflow: hidden;
 }
 
 .accordion_choice.active + .offer{
-  display: block;
+  height: 104px;
+  overflow: visible;
+  @include media-mobile{
+   height: 110px;
+  }
 }
+
+.accordion_choice.active > .prices__inside >.accordion__circle {
+   background-image: url("/Plants-RS-School/Plants/images/accordion_close.png");
+}
+
 .offer{
   border-radius: 0 0 20px 20px;
   background-color: $color-select;
   width: 250px;
-  height: 154px;
   margin: 0 auto;
-  &.active{
-    display: block;
+  @include media-mobile{
+    width: 180px;
   }
 }
 hr{
   margin-left: 40px;
   width: 65%;
+  @include media-mobile{
+    margin-left: 30px;
+  }
 }
 .offer__text{
   margin-top: 6px;
@@ -214,11 +223,18 @@ hr{
   @extend %font-second;
   width: 68%;
   margin-left: 40px;
+  @include media-mobile{
+    margin-left: 30px;
+  }
 }
 .offer__price{
   margin-left: 40px;
   @extend %font-second;
   @include font($size: 1.2rem,$style: normal,$weight: 400,$line-height:2.0);
+  @include media-mobile{
+    margin-left: 30px;
+    height: 30px;
+  }
 }
 .offer__color{
   @include font($size: 1.6rem,$style: normal,$weight: 700,$line-height:2.0);
@@ -230,5 +246,7 @@ hr{
   width: 34%;
   height: 26px;
   margin-left: 40px;
-  margin-top: 4px;
+  @include media-mobile{
+    margin-left: 30px;
+  }
 }

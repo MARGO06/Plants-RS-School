@@ -22,6 +22,7 @@ body{
 button{
   @extend %button-main;
   height: 50px;
+
 }
 h2{
   @include font($size: 4.0rem,$style: normal,$weight: 400,$line-height:normal);
@@ -36,6 +37,10 @@ h2{
   height: 50px;
   border-radius: 20px;
   margin: 34px 40px;
+  &.open{
+    margin-top: 134px;
+    position: relative;
+  }
   @include media-mobile{
     margin: 0 22px;
     width: 180px;
@@ -44,9 +49,15 @@ h2{
     }
     &:last-child{
       margin-top: 10px;
+      &.open{
+        margin-top: 120px;
+      }
     }
     &:nth-child(2){
       margin-top: 10px;
+      &.open{
+        margin-top: 120px;
+      }
     }
   }
 }

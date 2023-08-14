@@ -80,6 +80,10 @@ h2 {
   border-radius: 20px;
   margin: 34px 40px;
 }
+.accordion.open {
+  margin-top: 134px;
+  position: relative;
+}
 @media (max-width: 380px) {
   .accordion {
     margin: 0 22px;
@@ -91,8 +95,14 @@ h2 {
   .accordion:last-child {
     margin-top: 10px;
   }
+  .accordion:last-child.open {
+    margin-top: 120px;
+  }
   .accordion:nth-child(2) {
     margin-top: 10px;
+  }
+  .accordion:nth-child(2).open {
+    margin-top: 120px;
   }
 }
 
@@ -1075,7 +1085,7 @@ h1 {
   height: 282px;
 }
 .prices__accordion.active {
-  height: 420px;
+  height: 370px;
 }
 @media (max-width: 768px) {
   .prices__accordion {
@@ -1155,11 +1165,7 @@ h1 {
   border-radius: 50%;
   background-color: #D9D9D9;
   margin-top: 17px;
-}
-
-.accordion__arrow {
-  display: block;
-  margin: 6px auto;
+  background-image: url("/Plants-RS-School/Plants/images/accordion_open.png");
 }
 
 .information__price {
@@ -1294,27 +1300,44 @@ h1 {
 }
 
 .accordion_choice + .offer {
-  display: none;
+  height: 0;
+  overflow: hidden;
 }
 
 .accordion_choice.active + .offer {
-  display: block;
+  height: 104px;
+  overflow: visible;
+}
+@media (max-width: 380px) {
+  .accordion_choice.active + .offer {
+    height: 110px;
+  }
+}
+
+.accordion_choice.active > .prices__inside > .accordion__circle {
+  background-image: url("/Plants-RS-School/Plants/images/accordion_close.png");
 }
 
 .offer {
   border-radius: 0 0 20px 20px;
   background-color: #D6E7D2;
   width: 250px;
-  height: 154px;
   margin: 0 auto;
 }
-.offer.active {
-  display: block;
+@media (max-width: 380px) {
+  .offer {
+    width: 180px;
+  }
 }
 
 hr {
   margin-left: 40px;
   width: 65%;
+}
+@media (max-width: 380px) {
+  hr {
+    margin-left: 30px;
+  }
 }
 
 .offer__text {
@@ -1327,6 +1350,11 @@ hr {
   width: 68%;
   margin-left: 40px;
 }
+@media (max-width: 380px) {
+  .offer__text {
+    margin-left: 30px;
+  }
+}
 
 .offer__price {
   margin-left: 40px;
@@ -1334,6 +1362,12 @@ hr {
   font-style: normal;
   font-weight: 400;
   line-height: 2;
+}
+@media (max-width: 380px) {
+  .offer__price {
+    margin-left: 30px;
+    height: 30px;
+  }
 }
 
 .offer__color {
@@ -1349,7 +1383,11 @@ hr {
   width: 34%;
   height: 26px;
   margin-left: 40px;
-  margin-top: 4px;
+}
+@media (max-width: 380px) {
+  .offer__button {
+    margin-left: 30px;
+  }
 }
 
 .contacts {
