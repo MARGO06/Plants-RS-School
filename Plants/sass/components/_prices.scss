@@ -55,6 +55,11 @@
   }
 }
 
+.accordion:hover{
+  background-color: $color-select;
+  transition-duration: 2s;
+  cursor: pointer;
+}
 .accordion_choice{
   height: 50px;
   &.active{
@@ -146,6 +151,9 @@
   @extend %font-main;
   background-color: #ffffff;
   border-radius: 5px;
+  &:hover{
+    @extend %button-hover;
+  }
   @include media-tablet{
     width:54.7%;
     margin-left: 44.5%;

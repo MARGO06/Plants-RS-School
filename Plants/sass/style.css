@@ -25,6 +25,13 @@ button {
   border: 1px solid #E3E1D5;
 }
 
+.button_contact:hover, .button_choice:hover, .button_information:hover {
+  cursor: pointer;
+  background-color: #E06733;
+  color: #010201;
+  transition-duration: 2s;
+}
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -892,9 +899,6 @@ h1 {
   background-color: #E06733;
   color: #010201;
 }
-.button_choice:hover {
-  cursor: pointer;
-}
 @media (max-width: 559px) {
   .button_choice:last-child {
     margin-left: 0;
@@ -1091,6 +1095,12 @@ h1 {
     margin-top: 40px;
     margin-bottom: 0;
   }
+}
+
+.accordion:hover {
+  background-color: #D6E7D2;
+  transition-duration: 2s;
+  cursor: pointer;
 }
 
 .accordion_choice {
@@ -1465,6 +1475,9 @@ hr {
   background-position: right 35px top 50%, 0 0;
   width: 100%;
   height: 50px;
+}
+.contacts__choice_city:hover {
+  cursor: pointer;
 }
 @media (max-width: 380px) {
   .contacts__choice_city {

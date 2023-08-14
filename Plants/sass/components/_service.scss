@@ -63,7 +63,7 @@
     color: $color-navigation;
   }
   &:hover{
-    cursor: pointer;
+    @extend %button-hover;
   }
   @include media-adaptive-559{
     &:last-child{

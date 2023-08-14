@@ -20,3 +20,10 @@
   border-radius: 20px;
   border:1px solid #E3E1D5;
 }
+
+%button-hover{
+  cursor: pointer;
+  background-color: $color-primary;
+  color: $color-navigation;
+  transition-duration: 2s;
+}
