@@ -28,6 +28,7 @@
 }
 
 .prices__accordion{
+  position: relative;
   margin-top: 60px;
   height: 282px;
   @extend %card-border;
@@ -183,6 +184,17 @@
     display: none;
   }
 }
+
+.accordion__wrapper{
+  display: block;
+  height: 212px;
+  margin: 0 40px;
+  position: relative;
+  @include media-mobile{
+    margin: 0 22px;
+  }
+}
+
 .accordion_choice + .offer{
   height: 0;
   overflow: hidden;
@@ -190,7 +202,6 @@
 
 .accordion_choice.active + .offer{
   height: 104px;
-  overflow: visible;
   @include media-mobile{
    height: 110px;
   }

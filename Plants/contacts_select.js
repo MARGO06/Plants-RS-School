@@ -3,6 +3,7 @@ const city = document.querySelector(".contacts__name");
 const phone = document.querySelector(".contacts__phone");
 const address = document.querySelector(".contacts__street");
 const call = document.querySelector(".contacts_button");
+const dataChoice = document.querySelector(".contacts__data");
 
 console.log(call.getAttribute("href"))
 function showData(){
@@ -28,6 +29,12 @@ function showData(){
             address.innerHTML = "14 WEST Noyes BLVD";
             call.href = "tel:+1315908004";
          }
+        else if( event.target.value === "Canandaigua" ){
+         city.innerHTML = "Canandaigua, NY";
+         phone.innerHTML = "+1 585 393 0001";
+         address.innerHTML = "151 Charlotte Street";
+         call.href = "tel:+15853930001";
+      }
       })
     })
 }

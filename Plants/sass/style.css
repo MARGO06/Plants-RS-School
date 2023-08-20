@@ -76,17 +76,11 @@ h2 {
 .accordion {
   background-color: #EDF2EC;
   width: 250px;
-  height: 50px;
   border-radius: 20px;
-  margin: 34px 40px;
-}
-.accordion.open {
-  margin-top: 134px;
-  position: relative;
+  margin-top: 32px;
 }
 @media (max-width: 380px) {
   .accordion {
-    margin: 0 22px;
     width: 180px;
   }
   .accordion:first-child {
@@ -95,14 +89,8 @@ h2 {
   .accordion:last-child {
     margin-top: 10px;
   }
-  .accordion:last-child.open {
-    margin-top: 120px;
-  }
   .accordion:nth-child(2) {
     margin-top: 10px;
-  }
-  .accordion:nth-child(2).open {
-    margin-top: 120px;
   }
 }
 
@@ -1081,6 +1069,7 @@ h1 {
 }
 
 .prices__accordion {
+  position: relative;
   margin-top: 60px;
   height: 282px;
 }
@@ -1299,6 +1288,18 @@ h1 {
   }
 }
 
+.accordion__wrapper {
+  display: block;
+  height: 212px;
+  margin: 0 40px;
+  position: relative;
+}
+@media (max-width: 380px) {
+  .accordion__wrapper {
+    margin: 0 22px;
+  }
+}
+
 .accordion_choice + .offer {
   height: 0;
   overflow: hidden;
@@ -1306,7 +1307,6 @@ h1 {
 
 .accordion_choice.active + .offer {
   height: 104px;
-  overflow: visible;
 }
 @media (max-width: 380px) {
   .accordion_choice.active + .offer {
