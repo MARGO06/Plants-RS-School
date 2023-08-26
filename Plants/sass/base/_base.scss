@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-size: 10px;
+    line-height: 16px;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0, auto;
+    @include media-mobile{
+      &.lock{
+        height: 100%;
+        overflow-y: hidden;
+      }
+    }
+}
+
+button{
+  @extend %button-main;
+  height: 50px;
+
+}
+h2{
+  @include font($size: 4.0rem,$style: normal,$weight: 400,$line-height:normal);
+  @extend %font-main;
+  @include media-tablet{
+    @include font($size: 3.5rem,$style: normal,$weight: 400,$line-height:normal)
+  }
+}
+.accordion{
+  background-color: $color-background;
+  width: 250px;
+  border-radius: 20px;
+  margin-top: 32px;
+
+  @include media-mobile{
+    width: 180px;
+    &:first-child{
+    margin-top: 29px;
+    }
+    &:last-child{
+      margin-top: 10px;
+    }
+    &:nth-child(2){
+      margin-top: 10px;
+    }
+  }
+}
+

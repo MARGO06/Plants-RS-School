@@ -1,0 +1,130 @@
+.container__footer{
+  @include flex ($display: flex, $content:flex-start);
+  padding: 40px 0;
+  @include media-tablet{
+    flex-direction: column;
+    padding: 33px 0 18px 0;
+  }
+  @include media-mobile{
+    padding: 22px 0 7px 0;
+  }
+}
+
+.footer__img-block{
+  display: block;
+  width: 11%;
+  @include media-tablet{
+    width: 12%;
+  }
+}
+.footer__img{
+  display: block;
+  padding-top: 15px;
+  @include media-tablet{
+    padding: 4px;
+    margin: auto;
+  }
+}
+
+.footer_left-part{
+  @include flex ($display: flex, $content:space-between);
+  width: 14%;
+  @include media-adaptive{
+    width: 18%;
+  }
+  @include media-adaptive-1001{
+    width: 22%;
+  }
+  @include media-tablet{
+    margin: auto;
+    width: 31.4%;
+    @include flex ($display: flex, $content:space-around);
+  }
+  @include media-adaptive-559{
+    width: 40%;
+  }
+  @include media-mobile{
+    width: 64%;
+  }
+}
+
+.footer__year,
+.footer__github,
+.footer__center-part{
+  @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:5.0rem);
+  @extend %font-second;
+  @include media-tablet{
+    @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:normal);
+  }
+}
+
+.footer__center-part{
+  margin-left: 28%;
+  width: 19%;
+  @include media-adaptive{
+    width: 26%;
+    margin-left: 24%;
+  }
+  @include media-adaptive-1001{
+    width: 33%;
+    margin-left: 20%;
+  }
+  @include media-tablet{
+    margin: auto;
+    width: 31.4%;
+    margin-top: 16px;
+  }
+  @include media-adaptive-669{
+    width: 40%;
+  }
+  @include media-adaptive-559{
+    width: 48%;
+  }
+  @include media-adaptive-449{
+    width: 56%;
+  }
+  @include media-mobile{
+    width: 64%;
+  }
+  @include media-adaptive-331{
+    width: 66%;
+  }
+}
+
+.footer_right-part{
+  margin-left: 26%;
+  width: 16%;
+  @include media-adaptive{
+    width: 20%;
+    margin-left: 20%;
+  }
+  @include media-adaptive-1001{
+    width: 24%;
+    margin-left: 14%;
+  }
+  @include media-tablet{
+    margin: auto;
+    width: 28%;
+    margin-top: 25px;
+  }
+  @include media-adaptive-559{
+    width: 40%;
+  }
+  @include media-mobile{
+    width: 59%;
+    margin-top: 12px;
+  }
+}
+.navigate{
+  @include flex ($display: flex, $content:space-between);
+  list-style: none;
+}
+.navigate__link-footer{
+  display: block;
+  padding-top: 9px;
+  @include media-tablet{
+    padding-top: 0;
+  }
+}
+
+

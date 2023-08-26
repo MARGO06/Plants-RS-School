@@ -1,0 +1,92 @@
+.container__aboute{
+  @include flex ($display: flex, $content:space-between);
+  padding: 93px 0;
+  @include media-adaptive-1001{
+    flex-direction: column;
+  }
+  @include media-tablet{
+    padding: 40px 0 95px 0;
+  }
+  @include media-mobile{
+    padding: 30px 0 31px 0;
+  }
+}
+
+.information__aboute{
+  padding-top: 68px;
+  width: 50%;
+  @include media-adaptive-1001{
+    width: 100%;
+  }
+  @include media-tablet{
+    padding-top: 0;
+  }
+
+}
+
+.aboute__text{
+  margin-top: 40px;
+  width:100%;
+  @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:3.0rem);
+  color: $color-primary-text;
+  @extend %font-second;
+  @include media-tablet{
+    margin-top: 50px;
+  }
+  @include media-mobile{
+    margin-top: 18px;
+    @include font($size: 1.5rem,$style: normal,$weight: 400,$line-height:2.5rem);
+  }
+}
+
+.img__aboute{
+  margin-left: 153px;
+  @include media-tablet{
+    margin-left: 0;
+    margin: auto;
+    margin-top: 68px;
+    width: 37.2%;
+  }
+  @include media-adaptive-449{
+    width: 65%;
+  }
+  @include media-mobile{
+    margin: 0 auto;
+    width: 45%;
+    height: 147px;
+  }
+}
+
+.aboute__title{
+  color: $color-second;
+  @include media-tablet{
+   width:63%;
+   text-align: center;
+   margin: auto;
+  }
+  @include media-adaptive-559{
+    width: 100%;
+  }
+  @include media-mobile{
+    width: 87%;
+    @include font($size: 2.5rem,$style: normal,$weight: 400,$line-height:normal);
+  }
+}
+
+.aboute__title-color{
+  color: $color-primary;
+}
+
+.img__about-plants{
+  @include media-tablet{
+    display: block;
+    height: 258px;
+  }
+  @include media-adaptive-449{
+    margin: 20px auto;
+  }
+  @include media-mobile{
+    margin: 0;
+    height: 147px;
+  }
+}

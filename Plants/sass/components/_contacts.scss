@@ -1,0 +1,278 @@
+.contacts{
+  background-color: $color-background;
+}
+.container__contacts{
+  @include flex ($display: flex, $content:flex-start);
+  padding-top: 53px;
+  @include media-adaptive-1001{
+   flex-direction: column;
+  }
+  @include media-tablet{
+    padding-top: 40px;
+  }
+  @include media-mobile{
+    padding-top: 25px;
+    &.active{
+      padding:25px 0 33px 0;
+    }
+  }
+}
+
+.contacts__title{
+  width: 16%;
+  margin-top: 7px;
+  margin-left: 9%;
+  color: $color-second;
+  @include media-adaptive{
+    width: 25%;
+    margin-left: 5%;
+  }
+  @include media-adaptive-1001{
+    margin: auto;
+    order:1;
+  }
+  @include media-tablet{
+    @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:normal);
+    width: 29%;
+  }
+  @include media-adaptive-669{
+    width: 38%;
+  }
+  @include media-adaptive-559{
+    width: 47%;
+  }
+  @include media-adaptive-449 {
+    width: 56%;
+  }
+  @include media-mobile{
+    @include font($size: 2.5rem,$style: normal,$weight: 700,$line-height:normal);
+    width: 39%;
+    margin: auto;
+  }
+}
+.contacts__form{
+  margin-left: 5.2%;
+  margin-top: 95px;
+  width: 37% ;
+  @include media-adaptive{
+    margin-left: 3%;
+  }
+  @include media-adaptive-1001{
+    margin: auto;
+    margin-top: 20px;
+    order:2;
+  }
+  @include media-tablet{
+    width:67.3%;
+    margin-top: 99px;
+  }
+  @include media-adaptive-559{
+    width: 95%;
+  }
+  @include media-mobile{
+    margin-top: 82px;
+    width: 91%;
+  }
+}
+.contacts__choice_city{
+  display: block;
+  @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:4.0rem);
+  letter-spacing: 0.1rem;
+  color: $color-h1;
+  padding: 5px 35px 5px 20px;
+  border: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  appearance: none;
+  background-color: $color-select;
+  background-image: url("/Plants-RS-School/Plants/images/accordion_btn.svg");
+  background-repeat: no-repeat;
+  background-position: right 35px top 50%, 0 0;
+  width: 100% ;
+  height: 50px;
+  &:hover{
+    cursor: pointer;
+  }
+  @include media-mobile{
+    background-position: right 25px top 50%, 0 0;
+  }
+}
+
+.contacts__value{
+  margin-left: 20px;
+}
+
+.contacts__img{
+  @include media-adaptive-1001{
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  order:3;
+  }
+  @include media-tablet{
+    width:30%;
+    margin-top: 250px;
+    &.active{
+      margin-top: 14px;
+    }
+  }
+  @include media-mobile{
+    margin-top: 132px;
+    &.active{
+      display: none;
+    }
+  }
+}
+
+.contacts__choice_city + .contacts__data{
+  display: none;
+}
+
+.contacts__choice_city.active + .contacts__data{
+  display: block;
+}
+
+
+.contacts__data{
+  width: 100%;
+  height: 217px;
+  border: 1px solid $color-second-text;
+  border-radius: 20px;
+  margin-top: 47px;
+  @include media-adaptive{
+    height: 258px;
+  }
+  @include media-tablet{
+    height: 214px;
+  }
+}
+
+.contacts__city{
+  @include flex ($display: flex, $content:flex-start);
+  margin-top: 20px;
+  margin-left: 15px;
+  @include media-adaptive{
+    margin-top: 10px;
+  }
+  @include media-tablet{
+    margin-top: 20px;
+    margin-left: 35px;
+  }
+  @include media-mobile{
+    margin-top: 10px;
+  }
+}
+
+.name{
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:4.0rem);
+  letter-spacing: 0.8px;
+  @extend %font-second;
+  @include media-mobile{
+    width: 70px;
+  }
+}
+
+.contacts__name{
+  margin-left: 93px;
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:4.0rem);
+  @extend %font-second;
+  letter-spacing: 0.8px;
+  color: $color-h1;
+  @include media-adaptive{
+    margin-left: 83px;
+  }
+  @include media-tablet{
+    margin-left: 93px;
+  }
+  @include media-mobile{
+    margin-left: 16px;
+  }
+}
+
+.contacts__call{
+  @include flex ($display: flex, $content:flex-start);
+  margin-top: 8px;
+  margin-left: 35px;
+  @include media-adaptive{
+    margin-left: 15px;
+  }
+  @include media-tablet{
+    margin-left: 35px;
+  }
+  @include media-mobile{
+    margin-top: 0px;
+  }
+}
+
+.contacts__phone{
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:4.0rem);
+  @extend %font-second;
+  letter-spacing: 0.8px;
+  color: $color-h1;
+  margin-left: 70px;
+  @include media-adaptive{
+    margin-left: 60px;
+  }
+  @include media-tablet{
+    margin-left: 73px;
+  }
+  @include media-mobile{
+    margin-left: 8px;
+  }
+}
+.contacts__address{
+  @include flex ($display: flex, $content:flex-start);
+  margin-top: 8px;
+  margin-left: 35px;
+  @include media-adaptive{
+    margin-left: 15px;
+  }
+  @include media-tablet{
+    margin-left: 35px;
+  }
+  @include media-mobile{
+    margin-top: 8px;
+  }
+}
+
+.contacts__street{
+  @include font($size: 1.6rem,$style: normal,$weight: 400,$line-height:4.0rem);
+  @extend %font-second;
+  letter-spacing: 0.8px;
+  color: $color-h1;
+  margin-left: 12px;
+  @include media-adaptive{
+    margin-left: 2px;
+  }
+  @include media-tablet{
+    margin-left: 8px;
+  }
+  @include media-mobile{
+    margin-left: 8px;
+  }
+}
+
+.contacts_button{
+  display: block;
+  width: 122px;
+  height: 29px;
+  margin-top: 15px;
+  margin-left: 162px;
+  text-decoration: none;
+  @include font($size: 1.0rem,$style: normal,$weight: 700,$line-height:normal);
+  @extend %font-main;
+  color: $color-h1;
+  padding-top: 7px;
+  border: 1px solid $color-primary;
+  border-radius: 5px;
+  text-align: center;
+  @include media-adaptive{
+    margin-left: 142px;
+  }
+  @include media-tablet{
+    margin-left: 172px;
+  }
+  @include media-mobile{
+    margin-top: 0px;
+    margin-left: 120px;
+  }
+}

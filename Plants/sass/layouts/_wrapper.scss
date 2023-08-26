@@ -1,0 +1,31 @@
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+  @include media-adaptive{
+    max-width: 1000px;
+  }
+  @include media-adaptive-1001{
+    max-width: 800px;
+  }
+  @include media-adaptive-801 {
+    max-width: 767px;
+  }
+  @include media-tablet {
+    max-width: 668px;
+  }
+  @include media-adaptive-669 {
+    max-width: 558px;
+  }
+  @include media-adaptive-559 {
+    max-width: 448px;
+  }
+  @include media-adaptive-449{
+    max-width: 379px;
+  }
+  @include media-mobile{
+    max-width: 330px;
+  }
+  @include media-adaptive-331{
+    max-width: 320px;
+  }
+}

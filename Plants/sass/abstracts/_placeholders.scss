@@ -1,0 +1,29 @@
+%font-main{
+  font-family:Inika, Georgia, serif;
+}
+
+%font-second{
+  font-family:Inter, Verdana, sans-serif;
+}
+
+%button-main{
+  border-radius: 10px;
+  border: 1px solid #E06733;
+  background-color: $color-background;
+}
+
+%text-location{
+  text-align: center;
+}
+
+%card-border{
+  border-radius: 20px;
+  border:1px solid #E3E1D5;
+}
+
+%button-hover{
+  cursor: pointer;
+  background-color: $color-primary;
+  color: $color-navigation;
+  transition-duration: 2s;
+}
