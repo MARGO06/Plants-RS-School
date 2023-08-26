@@ -1,0 +1,263 @@
+.container__prices{
+  padding: 40px 0 88px 0;
+  @include flex ($display: flex, $content:space-between);
+  @include media-adaptive-669{
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+  }
+  @include media-mobile{
+    padding-top: 25px;
+  }
+}
+
+.prices__title{
+  @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:normal);
+  color: $color-second-text;
+  @extend %font-second;
+  @include media-tablet{
+    @include font($size: 3.5rem,$style: normal,$weight: 700,$line-height:normal);
+    margin-left: 14px;
+  }
+  @include media-adaptive-669{
+    width: 24%;
+    margin: auto;
+  }
+  @include media-mobile{
+    @include font($size: 2.5rem,$style: normal,$weight: 700,$line-height:normal);
+  }
+}
+
+.prices__accordion{
+  position: relative;
+  margin-top: 60px;
+  height: 282px;
+  @extend %card-border;
+  &.active{
+    height: 370px;
+  }
+  @include media-tablet{
+    margin-top: 55px;
+  }
+  @include media-adaptive-669{
+    width: 60%;
+    margin: 30px auto;
+  }
+  @include media-adaptive-559{
+    width: 75%;
+  }
+  @include media-adaptive-449{
+    width: 86%;
+  }
+  @include media-mobile{
+    width: 68%;
+    height: 235px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.accordion:hover{
+  background-color: $color-select;
+  transition-duration: 2s;
+  cursor: pointer;
+}
+.accordion_choice{
+  height: 50px;
+  &.active{
+    background-color: $color-select;
+    border-radius: 20px 20px 0 0;
+  }
+}
+.accordion__text{
+  @include font ($size: 2.0rem,$style: normal,$weight: 700,$line-height:2.0rem);
+  color: $color-second-text;
+  @extend %font-second;
+  margin-top:16px;
+  @include media-mobile{
+    @include font ($size: 1.5rem,$style: normal,$weight: 700,$line-height:2.0rem);
+  }
+}
+.prices__inside{
+  @include flex ($display: flex, $content:space-between);
+  padding: 0 40px;
+  @include media-mobile{
+    padding: 0 38px 0 30px;
+  }
+}
+.accordion__circle{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-circle;
+  margin-top: 17px;
+  background-image: url("/Plants-RS-School/Plants/images/accordion_open.png");
+}
+
+.information__price{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 37%;
+  @include media-adaptive-1001{
+    width: 50%;
+  }
+  @include media-tablet{
+    width: 44.5%;
+  }
+  @include media-adaptive-669{
+    margin: 0 auto;
+    width: 46%;
+  }
+  @include media-adaptive-559{
+    width: 75%;
+  }
+  @include media-mobile{
+    width: 70%;
+  }
+}
+.prices__information{
+  @include font($size: 4.0rem,$style: normal,$weight: 700,$line-height:5.0rem);
+  @extend %font-second;
+  text-align: end;
+  width: 100%;
+  color: $color-second-text;
+  @include media-tablet{
+    @include font($size: 2.5rem,$style: normal,$weight: 700,$line-height:3.5rem);
+    margin-top: 99px;
+  }
+  @include media-adaptive-669{
+    margin-top: 0;
+    text-align: center;
+  }
+  @include media-mobile{
+    @include font($size: 2.0rem,$style: normal,$weight: 700,$line-height:3.5rem);
+    margin-top: 21px;
+  }
+}
+
+.information__world{
+  color: $color-second;
+}
+
+.button_contact{
+  margin-top: 38px;
+  margin-left: 64%;
+  width: 36%;
+  height: 50px;
+  color: $color-primary;
+  @include font($size: 2.0rem,$style: normal,$weight: 700,$line-height:normal);
+  @extend %font-main;
+  background-color: #ffffff;
+  border-radius: 5px;
+  &:hover{
+    @extend %button-hover;
+  }
+  @include media-tablet{
+    width:54.7%;
+    margin-left: 44.5%;
+    margin-top: 28px;
+  }
+  @include media-adaptive-669{
+    margin: 20px auto;
+  }
+  @include media-mobile{
+    width: 52%;
+    height: 35px;
+    @include font($size: 1.5rem,$style: normal,$weight: 700,$line-height:normal);
+    margin-bottom: 0;
+  }
+}
+
+.prices__img{
+  display: block;
+  margin-top: 39px;
+  margin-left: 290px;
+  @include media-tablet{
+    width:51%;
+    margin-left: 49%;
+    margin-top: 34px;
+  }
+  @include media-adaptive-669{
+    margin: 20px auto;
+  }
+  @include media-mobile{
+    display: none;
+  }
+}
+
+.accordion__wrapper{
+  display: block;
+  height: 212px;
+  margin: 0 40px;
+  position: relative;
+  @include media-mobile{
+    margin: 0 22px;
+  }
+}
+
+.accordion_choice + .offer{
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion_choice.active + .offer{
+  height: 104px;
+  @include media-mobile{
+   height: 110px;
+  }
+}
+
+.accordion_choice.active > .prices__inside >.accordion__circle {
+   background-image: url("/Plants-RS-School/Plants/images/accordion_close.png");
+}
+
+.offer{
+  border-radius: 0 0 20px 20px;
+  background-color: $color-select;
+  width: 250px;
+  margin: 0 auto;
+  @include media-mobile{
+    width: 180px;
+  }
+}
+hr{
+  margin-left: 40px;
+  width: 65%;
+  @include media-mobile{
+    margin-left: 30px;
+  }
+}
+.offer__text{
+  margin-top: 6px;
+  @include font($size: 1.0rem,$style: normal,$weight: 300,$line-height:1.0);
+  color: $color-h1;
+  @extend %font-second;
+  width: 68%;
+  margin-left: 40px;
+  @include media-mobile{
+    margin-left: 30px;
+  }
+}
+.offer__price{
+  margin-left: 40px;
+  @extend %font-second;
+  @include font($size: 1.2rem,$style: normal,$weight: 400,$line-height:2.0);
+  @include media-mobile{
+    margin-left: 30px;
+    height: 30px;
+  }
+}
+.offer__color{
+  @include font($size: 1.6rem,$style: normal,$weight: 700,$line-height:2.0);
+  color: $color-primary;
+}
+
+.offer__button{
+  border: none;
+  width: 34%;
+  height: 26px;
+  margin-left: 40px;
+  @include media-mobile{
+    margin-left: 30px;
+  }
+}

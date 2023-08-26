@@ -1,0 +1,46 @@
+@mixin font($size,$style,$weight,$line-height){
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin flex($display,$content){
+  display:$display;
+  justify-content: $content;
+}
+
+@mixin media-adaptive {
+  @media (max-width:$screen-width-1221){@content;}
+}
+
+@mixin media-adaptive-1001 {
+  @media (max-width:$screen-width-1001){@content;}
+}
+
+@mixin media-adaptive-801 {
+  @media (max-width:$screen-width-801){@content;}
+}
+
+@mixin media-tablet {
+  @media (max-width:$screen-tablet-width){@content;}
+}
+
+@mixin media-adaptive-669 {
+  @media (max-width:$screen-width-669){@content;}
+}
+
+@mixin media-adaptive-559 {
+  @media (max-width:$screen-width-559){@content;}
+}
+
+@mixin media-adaptive-449 {
+  @media (max-width:$screen-width-449){@content;}
+}
+
+@mixin media-mobile {
+  @media (max-width:$screen-mobile-width){@content;}
+}
+@mixin media-adaptive-331 {
+  @media (max-width:$screen-width-331){@content;}
+}

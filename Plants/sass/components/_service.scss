@@ -1,0 +1,162 @@
+.service{
+  background-color: $color-background;
+}
+
+.container__service{
+  padding: 40px 0 121px 0;
+  @include media-tablet{
+    padding: 60px 0 70px 0;
+  }
+  @include media-mobile{
+    padding: 30px 0 27px 0;
+  }
+}
+
+.service__title{
+  color: $color-second;
+  width: 25%;
+  @include media-adaptive-1001{
+    width: 45%;
+  }
+  @include media-adaptive-559{
+    width: 100%;
+  }
+  @include media-mobile{
+    @include font($size: 2.5rem,$style: normal,$weight: 400,$line-height:normal);
+    width: 57%;
+  }
+}
+.service__button{
+  @include flex ($display: flex, $content:flex-start);
+  width: 100%;
+  @include media-adaptive-1001{
+    flex-direction: column;
+  }
+}
+.service__buttons{
+  margin-top: 29px;
+  margin-left: 143px;
+  width: 60%;
+  @include media-adaptive-1001{
+    margin-left: 0;
+    width: 75%;
+  }
+  @include media-tablet{
+    margin-top: 44px;
+    width: 100%;
+  }
+  @include media-mobile{
+    margin-top: 40px;
+    width: 80%;
+  }
+}
+
+.button_choice{
+  width: 161px;
+  height: 50px;
+  margin-left: 33px;
+  color: $color-primary;
+  @include font($size: 2.0rem,$style: normal,$weight: 400,$line-height:normal);
+  @extend %font-main;
+  &.active{
+    background-color: $color-primary;
+    color: $color-navigation;
+  }
+  &:hover{
+    @extend %button-hover;
+  }
+  &.no-hover{
+    cursor: none;
+    background-color: $color-background;
+    color: $color-primary;
+  }
+  @include media-adaptive-559{
+    &:last-child{
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  @include media-mobile{
+    width: 121px;
+    height: 35px;
+    margin-left: 10px;
+    @include font($size: 1.5rem,$style: normal,$weight: 400,$line-height:normal);
+  }
+}
+
+.button_choice:first-child{
+  margin-left: 0;
+}
+
+.service__img{
+  @include flex ($display: flex, $content:space-between);
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  height: 955px;
+  @include media-adaptive-1001{
+    height: 1400px;
+    margin-top: 50px;
+  }
+  @include media-tablet{
+    margin-top: 2px;
+    height: 1464px;
+  }
+  @include media-adaptive-669{
+    height: 3000px;
+    margin-top: 38px;
+  }
+  @include media-mobile{
+    height: 2870px;
+  }
+}
+
+.card{
+  height: 450px;
+  @extend %card-border;
+  @include media-adaptive-1001{
+    margin-top: 30px;
+  }
+  @include media-tablet{
+    margin-top: 38px;
+  }
+  @include media-adaptive-669{
+    margin: auto;
+  }
+  @include media-mobile{
+    ma
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+}
+
+.card__table-of-contents,
+.card__text
+{
+  display: block;
+  margin-top: 8px;
+  @extend %text-location;
+  @extend %font-second;
+}
+
+.card__text{
+  color: $color-h1;
+  @include font ($size: 1.6rem,$style: normal,$weight: 400,$line-height:2.0rem);
+  @include media-tablet{
+    text-align: center;
+    width: 72%;
+    margin: 8px auto;
+  }
+}
+
+.card__table-of-contents{
+  @include font ($size: 2.0rem,$style: normal,$weight: 700,$line-height:2.0rem);
+  color: $color-primary;
+}
+
+.card__garden.active,
+.card__planting.active,
+.card__lawn.active{
+  opacity: 0.5;
+}
