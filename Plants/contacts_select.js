@@ -3,13 +3,16 @@ const city = document.querySelector(".contacts__name");
 const phone = document.querySelector(".contacts__phone");
 const address = document.querySelector(".contacts__street");
 const call = document.querySelector(".contacts_button");
-const dataChoice = document.querySelector(".contacts__data");
+const img = document.querySelector(".contacts__img");
+const container = document.querySelector(".container__contacts");
 
-console.log(call.getAttribute("href"))
+
 function showData(){
     choices.forEach(choice=>{
       choice.addEventListener("change", event=>{
         event.target.classList.add('active');
+        img.classList.add("active");
+        container.classList.add(".active");
 //change dates
         if( event.target.value === "New York" ){
            city.innerHTML = "New York City";
